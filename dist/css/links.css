@@ -713,7 +713,7 @@ nav {
 
 .feedback2 .feedback2-top img {
   position: absolute;
-  top: -12vh;
+  top: -15vh;
   height: 30vh;
   z-index: 5;
   -webkit-transition: 3s ease;
@@ -1110,8 +1110,8 @@ nav {
     height: 100vh;
     margin-top: 40vh;
     width: 90%;
-    background: -webkit-gradient(linear, right bottom, left top, from(#040405), to(#020303e5));
-    background: linear-gradient(to left top, #040405, #020303e5);
+    background: -webkit-gradient(linear, right bottom, left top, from(#040405b6), to(#e3e9e927));
+    background: linear-gradient(to left top, #040405b6, #e3e9e927);
   }
   .links .links-header {
     -webkit-box-flex: 0;
@@ -1176,7 +1176,7 @@ nav {
   .feedback2 .feedback2-top img {
     position: absolute;
     top: -4vh;
-    right: -7vh;
+    right: -4vh;
     height: 20.5vh;
     z-index: 5;
   }
