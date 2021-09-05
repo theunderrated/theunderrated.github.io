@@ -1110,6 +1110,8 @@ nav {
     height: 100vh;
     margin-top: 40vh;
     width: 90%;
+    background: -webkit-gradient(linear, right bottom, left top, from(#040405), to(#020303e5));
+    background: linear-gradient(to left top, #040405, #020303e5);
   }
   .links .links-header {
     -webkit-box-flex: 0;

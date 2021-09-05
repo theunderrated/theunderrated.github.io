@@ -427,6 +427,7 @@
     height: 100vh;
     margin-top: 40vh;
     width: 90%;
+    background: linear-gradient(to left top, #040405, #020303e5);
     #{&}-header {
       flex: 0 1 40%;
       display: grid;
