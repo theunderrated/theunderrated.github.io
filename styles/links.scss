@@ -1,0 +1,533 @@
+@import "./glass";
+@import "./commons";
+.glass {
+  height: 190vh;
+  @include media("<=tablet") {
+    height: 210vh;
+    overflow: hidden;
+  }
+}
+
+@mixin feedback-drop {
+  height: 40vh;
+  width: 15vw;
+  position: absolute;
+  background: white;
+  background: linear-gradient(to right bottom, #00000048, rgb(0, 0, 0));
+  backdrop-filter: blur(8rem);
+  -webkit-backdrop-filter: blur(8rem);
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  border-radius: 1rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  @include media("<=tablet") {
+    height: 15vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+@mixin feedback-bottom {
+  margin-top: 1vh;
+  flex: 0 1 25vh;
+  width: 85%;
+  background: white;
+  background: linear-gradient(to right top, #ffffff41, #ffffff21);
+  backdrop-filter: blur(10rem);
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  border-radius: 1rem;
+  display: grid;
+  place-content: center;
+  @include media("<=tablet") {
+    flex: 0 1 78%;
+    margin-top: 0;
+    height: 90%;
+  }
+}
+@mixin h2 {
+  font-size: 4.5vh;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+@mixin fonts-bottom {
+  h1 {
+    font-size: 3.5vh;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    @include media("<=tablet") {
+      font-size: 2.5vh;
+      font-weight: 400;
+      text-align: left;
+    }
+  }
+  h2 {
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #040405;
+    @include media("<=tablet") {
+      font-size: 2.4vh;
+    }
+  }
+  h3 {
+    font-size: 2vh;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #040405;
+    @include media("<=tablet") {
+      font-size: 1.5vh;
+    }
+  }
+}
+/*starts here */
+.links {
+  height: 125vh;
+  width: 40%;
+  margin: auto;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(1rem);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
+  #{&}-header {
+    flex: 0 1 30%;
+    h2 {
+      @include h2;
+
+      text-align: center;
+      padding: 4rem 6rem;
+      #lil {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  #{&}-container {
+    border-top: 1px solid;
+    flex: 1 1 110%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right top, #ffffff4d, #ffffff2d);
+    backdrop-filter: blur(1rem);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
+    border-bottom: 1px solid;
+
+    .links-container-inner {
+      flex: 0 1 60vh;
+      width: 75%;
+      border-radius: 5px;
+      background: linear-gradient(to left top, #040405, #020303e5);
+      backdrop-filter: blur(1rem);
+      -webkit-backdrop-filter: blur(1rem);
+      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &-l1 {
+        flex: 0 1 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+          flex: 0 1 30%;
+          display: grid;
+          place-content: center;
+          img {
+            height: 5.5rem;
+            @include media("<=tablet") {
+              height: 3rem;
+            }
+          }
+        }
+        &-right {
+          flex: 0 1 90%;
+          border-bottom: 1px solid #8e8e93;
+          display: flex;
+          align-items: center;
+          h2 {
+            font-size: 2.5vh;
+            font-weight: 200;
+            @include media("<=tablet") {
+              font-size: 2.1vh;
+            }
+          }
+        }
+      }
+      &-l2 {
+        flex: 0 1 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+          flex: 0 1 30%;
+          display: grid;
+          place-content: center;
+          img {
+            height: 5.5rem;
+            @include media("<=tablet") {
+              height: 3rem;
+            }
+          }
+        }
+        &-right {
+          flex: 0 1 90%;
+          border-bottom: 1px solid #8e8e93;
+          display: flex;
+          align-items: center;
+          h2 {
+            font-size: 2.5vh;
+            font-weight: 200;
+            @include media("<=tablet") {
+              font-size: 2.1vh;
+            }
+          }
+        }
+      }
+      &-l3 {
+        flex: 0 1 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+          flex: 0 1 30%;
+          display: grid;
+          place-content: center;
+          img {
+            height: 5.5rem;
+            @include media("<=tablet") {
+              height: 3rem;
+            }
+          }
+        }
+        &-right {
+          flex: 0 1 90%;
+          border-bottom: 1px solid #8e8e93;
+          display: flex;
+          align-items: center;
+          h2 {
+            font-size: 2.5vh;
+            font-weight: 200;
+            @include media("<=tablet") {
+              font-size: 2.1vh;
+            }
+          }
+        }
+      }
+      &-l4 {
+        flex: 0 1 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+          flex: 0 1 30%;
+          display: grid;
+          place-content: center;
+          img {
+            height: 5.5rem;
+            @include media("<=tablet") {
+              height: 3rem;
+            }
+          }
+        }
+        &-right {
+          flex: 0 1 90%;
+          border-bottom: 1px solid #8e8e93;
+          display: flex;
+          align-items: center;
+          h2 {
+            font-size: 2.5vh;
+            font-weight: 200;
+            @include media("<=tablet") {
+              font-size: 2.1vh;
+            }
+          }
+        }
+      }
+      &-l5 {
+        flex: 0 1 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &-left {
+          flex: 0 1 30%;
+          display: grid;
+          place-content: center;
+          img {
+            height: 5.5rem;
+            @include media("<=tablet") {
+              height: 3rem;
+            }
+          }
+        }
+        &-right {
+          flex: 0 1 90%;
+
+          display: flex;
+          align-items: center;
+          h2 {
+            font-size: 2.5vh;
+            font-weight: 200;
+            @include media("<=tablet") {
+              font-size: 2.1vh;
+            }
+          }
+        }
+      }
+    }
+  }
+  #{&}-footer {
+    flex: 1 0 10%;
+    background: black;
+  }
+}
+
+.feedback1 {
+  top: 30vh;
+  left: 5vw;
+  @include feedback-drop;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+  #{&}-top {
+    flex: 0 1 12vh;
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: -12vh;
+      height: 30vh;
+      z-index: 5;
+      transition: 3s ease;
+      transition-property: transform;
+    }
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
+  }
+  #{&}-bottom {
+    @include feedback-bottom();
+    @include fonts-bottom();
+  }
+}
+.feedback2 {
+  top: 50vh;
+  right: 5vw;
+  @include feedback-drop;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+  #{&}-top {
+    flex: 0 1 12vh;
+    width: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -12vh;
+      height: 30vh;
+      z-index: 5;
+      transition: 3s ease;
+      transition-property: transform;
+    }
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
+  }
+  #{&}-bottom {
+    @include feedback-bottom();
+    @include fonts-bottom();
+  }
+}
+.feedback3 {
+  top: 90vh;
+  left: 10vw;
+  @include feedback-drop;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+  #{&}-top {
+    flex: 0 1 12vh;
+    width: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -12vh;
+      height: 30vh;
+      z-index: 5;
+      transition: 3s ease;
+      transition-property: transform;
+    }
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
+  }
+  #{&}-bottom {
+    @include feedback-bottom();
+    @include fonts-bottom();
+  }
+}
+.feedback4 {
+  top: 120vh;
+  right: 10vw;
+  @include feedback-drop;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+
+  #{&}-top {
+    flex: 0 1 12vh;
+    width: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -12vh;
+      height: 30vh;
+      z-index: 5;
+      transition: 3s ease;
+      transition-property: transform;
+    }
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
+  }
+  #{&}-bottom {
+    @include feedback-bottom();
+    @include fonts-bottom();
+  }
+}
+/*design for da mobile */
+@include media("<=tablet") {
+  .links {
+    height: 100vh;
+    margin-top: 40vh;
+    width: 90%;
+    #{&}-header {
+      flex: 0 1 40%;
+      display: grid;
+      place-content: center;
+      h2 {
+        font-size: 2.6vh;
+        padding: 1rem;
+      }
+    }
+    #{&}-container {
+      flex: 1 1 60;
+      .links-container-inner {
+        width: 90%;
+        flex: 0 1 95%;
+      }
+    }
+  }
+  .feedback1 {
+    top: 22vh;
+    left: 0vh;
+    #{&}-top {
+      flex: 0 1 20%;
+      position: relative;
+      height: 100%;
+
+      img {
+        position: absolute;
+        top: -4vh;
+        right: -7vh;
+        height: 20.5vh;
+        z-index: 5;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+  .feedback2 {
+    top: 42vh;
+    right: 0;
+    flex-direction: row;
+    #{&}-top {
+      flex: 0 1 20%;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        top: -4vh;
+        right: -7vh;
+        height: 20.5vh;
+        z-index: 5;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+  .feedback3 {
+    top: 165vh;
+    left: 0vh;
+    #{&}-top {
+      flex: 0 1 20%;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        top: -4vh;
+        right: -7vh;
+        height: 20.5vh;
+        z-index: 5;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+  .feedback4 {
+    top: 185vh;
+    right: 0vh;
+    flex-direction: row;
+    #{&}-top {
+      flex: 0 1 20%;
+      position: relative;
+      height: 100%;
+      img {
+        position: absolute;
+        top: -4vh;
+        right: -7vh;
+        height: 20.5vh;
+        z-index: 5;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+}
+/*iphone 5s responsive */
+@include media("<=phone") {
+  .feedback1 {
+    top: 25vh;
+    left: 0vh;
+  }
+}
