@@ -303,6 +303,9 @@
           margin: auto;
           display: inline-block;
           @include drop-down;
+          a{
+            cursor: pointer;
+          }
           h2 {
             margin-top: 3vh;
           }
