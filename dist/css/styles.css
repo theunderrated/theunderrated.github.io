@@ -99,8 +99,8 @@ nav {
   color: white;
   width: 100%;
   background: white;
-  background: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#020303e5));
-  background: linear-gradient(to right top, #040405, #020303e5);
+  background: -webkit-gradient(linear, left bottom, right top, from(#040405), to(#1C1C1E));
+  background: linear-gradient(to right top, #040405, #1C1C1E);
   position: relative;
 }
 
