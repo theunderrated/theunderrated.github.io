@@ -93,9 +93,11 @@
     display: inline;
     margin: 0;
     padding: 0;
+    
   }
   li {
     display: inline-block;
+    
   }
   li:hover {
     background: #1c1c1e;
@@ -218,6 +220,12 @@
           @include drop-down;
           h2 {
             margin-top: 3vh;
+            span{
+              margin-left: 7rem;
+              @include media("<=tablet") {
+                margin-left: 0.8rem;
+              }
+            }
           }
         }
       }
@@ -247,6 +255,12 @@
           @include drop-down;
           h2 {
             margin-top: 3vh;
+            span{
+              margin-left: 3.5rem;
+              @include media("<=tablet") {
+                margin-left: 0.8rem;
+              }
+            }
           }
         }
       }
@@ -276,6 +290,12 @@
           @include drop-down;
           h2 {
             margin-top: 3vh;
+            span{
+              margin-left: 5rem;
+              @include media("<=tablet") {
+                margin-left: 0.8rem;
+              }
+            }
           }
         }
       }
@@ -308,6 +328,12 @@
           }
           h2 {
             margin-top: 3vh;
+            span{
+              margin-left: 4rem;
+              @include media("<=tablet") {
+                margin-left: 0.8rem;
+              }
+            }
           }
         }
       }
@@ -335,6 +361,12 @@
           margin: auto;
           display: inline-block;
           @include drop-down;
+          span{
+            margin-left: 3.3rem;
+            @include media("<=tablet") {
+              margin-left: 0.8rem;
+            }
+          }
         }
       }
     }
