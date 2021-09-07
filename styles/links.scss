@@ -93,11 +93,9 @@
     display: inline;
     margin: 0;
     padding: 0;
-    
   }
   li {
     display: inline-block;
-    
   }
   li:hover {
     background: #1c1c1e;
@@ -130,18 +128,11 @@
     font-weight: 200;
     cursor: pointer;
     @include media("<=tablet") {
-      font-size: 2.1vh;
-    }
-  }
-  h3 {
-    font-size: 2.2vh;
-    font-weight: 200;
-    line-height: 6vh;
-    padding-left: 2rem;
-    @include media("<=tablet") {
       font-size: 1.8vh;
     }
   }
+  
+  
 }
 
 /*starts here */
@@ -220,7 +211,7 @@
           @include drop-down;
           h2 {
             margin-top: 3vh;
-            span{
+            span {
               margin-left: 7rem;
               @include media("<=tablet") {
                 margin-left: 0rem;
@@ -255,7 +246,7 @@
           @include drop-down;
           h2 {
             margin-top: 3vh;
-            span{
+            span {
               margin-left: 3.5rem;
               @include media("<=tablet") {
                 margin-left: 0rem;
@@ -290,10 +281,10 @@
           @include drop-down;
           h2 {
             margin-top: 3vh;
-            span{
+            span {
               margin-left: 5rem;
               @include media("<=tablet") {
-                margin-left: 0rem;
+                margin-left: 0;
               }
             }
           }
@@ -323,12 +314,12 @@
           margin: auto;
           display: inline-block;
           @include drop-down;
-          a{
+          a {
             cursor: pointer;
           }
           h2 {
             margin-top: 3vh;
-            span{
+            span {
               margin-left: 4rem;
               @include media("<=tablet") {
                 margin-left: 0rem;
@@ -361,7 +352,7 @@
           margin: auto;
           display: inline-block;
           @include drop-down;
-          span{
+          span {
             margin-left: 3.3rem;
             @include media("<=tablet") {
               margin-left: 0rem;

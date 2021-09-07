@@ -305,19 +305,6 @@ nav {
 
 @media (max-width: 768px) {
   .links .links-container .links-container-inner-l1-right h2 {
-    font-size: 2.1vh;
-  }
-}
-
-.links .links-container .links-container-inner-l1-right h3 {
-  font-size: 2.2vh;
-  font-weight: 200;
-  line-height: 6vh;
-  padding-left: 2rem;
-}
-
-@media (max-width: 768px) {
-  .links .links-container .links-container-inner-l1-right h3 {
     font-size: 1.8vh;
   }
 }
@@ -432,19 +419,6 @@ nav {
 
 @media (max-width: 768px) {
   .links .links-container .links-container-inner-l2-right h2 {
-    font-size: 2.1vh;
-  }
-}
-
-.links .links-container .links-container-inner-l2-right h3 {
-  font-size: 2.2vh;
-  font-weight: 200;
-  line-height: 6vh;
-  padding-left: 2rem;
-}
-
-@media (max-width: 768px) {
-  .links .links-container .links-container-inner-l2-right h3 {
     font-size: 1.8vh;
   }
 }
@@ -559,19 +533,6 @@ nav {
 
 @media (max-width: 768px) {
   .links .links-container .links-container-inner-l3-right h2 {
-    font-size: 2.1vh;
-  }
-}
-
-.links .links-container .links-container-inner-l3-right h3 {
-  font-size: 2.2vh;
-  font-weight: 200;
-  line-height: 6vh;
-  padding-left: 2rem;
-}
-
-@media (max-width: 768px) {
-  .links .links-container .links-container-inner-l3-right h3 {
     font-size: 1.8vh;
   }
 }
@@ -586,7 +547,7 @@ nav {
 
 @media (max-width: 768px) {
   .links .links-container .links-container-inner-l3-right h2 span {
-    margin-left: 0rem;
+    margin-left: 0;
   }
 }
 
@@ -686,19 +647,6 @@ nav {
 
 @media (max-width: 768px) {
   .links .links-container .links-container-inner-l4-right h2 {
-    font-size: 2.1vh;
-  }
-}
-
-.links .links-container .links-container-inner-l4-right h3 {
-  font-size: 2.2vh;
-  font-weight: 200;
-  line-height: 6vh;
-  padding-left: 2rem;
-}
-
-@media (max-width: 768px) {
-  .links .links-container .links-container-inner-l4-right h3 {
     font-size: 1.8vh;
   }
 }
@@ -816,19 +764,6 @@ nav {
 
 @media (max-width: 768px) {
   .links .links-container .links-container-inner-l5-right h2 {
-    font-size: 2.1vh;
-  }
-}
-
-.links .links-container .links-container-inner-l5-right h3 {
-  font-size: 2.2vh;
-  font-weight: 200;
-  line-height: 6vh;
-  padding-left: 2rem;
-}
-
-@media (max-width: 768px) {
-  .links .links-container .links-container-inner-l5-right h3 {
     font-size: 1.8vh;
   }
 }
