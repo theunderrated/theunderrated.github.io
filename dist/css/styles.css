@@ -230,14 +230,11 @@ nav {
   margin-bottom: 3vh;
 }
 
-.land-left h3 {
-  display: none;
-}
-
 .land-left h4 {
   font-size: 3.5vh;
+  line-height: 6vh;
   font-weight: 400;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
 }
 
 #blue {
@@ -259,26 +256,21 @@ nav {
 .buttons-hero .coursesbtn {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
-  margin-left: 1vw;
+  margin-left: 1.5vw;
   font-weight: 500;
-  color: #040405;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.945)), to(rgba(255, 255, 255, 0.822)));
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.945), rgba(255, 255, 255, 0.822));
+  color: white;
+  background: #1C1C1E;
   text-decoration: none;
-  padding: 1.5rem 5rem 1.5rem 2rem;
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
-  -webkit-box-shadow: 2px 2px 5px 2px rgba(255, 255, 255, 0.835);
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.575);
-  border-radius: 1rem;
+  text-align: center;
+  padding: 1.2rem 5rem 1.2rem 2rem;
+  border-radius: 0.5rem;
   border: none;
   position: relative;
 }
 
 .buttons-hero .coursesbtn:hover {
-  background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
-  background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-  color: #ffffff;
+  padding: 1.1rem 4.9rem 1.1rem 1.9rem;
+  color: #767680;
 }
 
 .buttons-hero .coursesbtn img {
@@ -394,9 +386,9 @@ nav {
 
 .feedback1 .feedback1-top img {
   position: absolute;
-  top: -4vh;
-  left: 15%;
-  height: 35vh;
+  top: -2vh;
+  left: -5%;
+  height: 38vh;
   z-index: 5;
   -webkit-transition: 3s ease;
   transition: 3s ease;
@@ -467,6 +459,270 @@ nav {
 
 @media (max-width: 768px) {
   .feedback1 .feedback1-bottom h2 {
+    font-size: 2.4vh;
+  }
+}
+
+.feedback2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20vw;
+          flex: 0 0 20vw;
+  height: 80vh;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+  border-radius: 1rem;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .feedback2 {
+    height: 15vh;
+    width: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.feedback2:hover {
+  -webkit-transform: translateY(-0.6rem);
+          transform: translateY(-0.6rem);
+}
+
+.feedback2 .feedback2-top {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 12vh;
+          flex: 0 1 12vh;
+  width: 100%;
+}
+
+.feedback2 .feedback2-top img {
+  position: absolute;
+  top: -2vh;
+  left: -4%;
+  height: 32vh;
+  z-index: 5;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.feedback2 .feedback2-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 5;
+}
+
+.feedback2 .feedback2-bottom {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60vh;
+          flex: 0 1 60vh;
+  width: 90%;
+  background: -webkit-gradient(linear, right top, left bottom, from(#1c1c1e91), to(#1c1c1e94));
+  background: linear-gradient(to left bottom, #1c1c1e91, #1c1c1e94);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  border-radius: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  .feedback2 .feedback2-bottom {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 78%;
+            flex: 0 1 78%;
+    margin-top: 0;
+    height: 90%;
+  }
+}
+
+.feedback2 .feedback2-bottom h1 {
+  font-size: 3.5vh;
+  padding: 8vh 2vw 4vh;
+  text-align: center;
+  line-height: 6vh;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .feedback2 .feedback2-bottom h1 {
+    font-size: 2.5vh;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+.feedback2 .feedback2-bottom h2 {
+  font-size: 2.5vh;
+  text-align: center;
+  margin: auto;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #767680;
+}
+
+@media (max-width: 768px) {
+  .feedback2 .feedback2-bottom h2 {
+    font-size: 2.4vh;
+  }
+}
+
+.feedback3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20vw;
+          flex: 0 0 20vw;
+  height: 80vh;
+  -webkit-backdrop-filter: blur(0);
+          backdrop-filter: blur(0);
+  border-radius: 1rem;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .feedback3 {
+    height: 15vh;
+    width: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.feedback3:hover {
+  -webkit-transform: translateY(-0.6rem);
+          transform: translateY(-0.6rem);
+}
+
+.feedback3 .feedback3-top {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 12vh;
+          flex: 0 1 12vh;
+  width: 100%;
+}
+
+.feedback3 .feedback3-top img {
+  position: absolute;
+  top: -2vh;
+  left: -5%;
+  height: 32vh;
+  z-index: 5;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.feedback3 .feedback3-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 5;
+}
+
+.feedback3 .feedback3-bottom {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60vh;
+          flex: 0 1 60vh;
+  width: 90%;
+  background: -webkit-gradient(linear, right top, left bottom, from(#1c1c1e91), to(#1c1c1e94));
+  background: linear-gradient(to left bottom, #1c1c1e91, #1c1c1e94);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  border-radius: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  .feedback3 .feedback3-bottom {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 78%;
+            flex: 0 1 78%;
+    margin-top: 0;
+    height: 90%;
+  }
+}
+
+.feedback3 .feedback3-bottom h1 {
+  font-size: 3.5vh;
+  padding: 8vh 2vw 4vh;
+  text-align: center;
+  line-height: 6vh;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .feedback3 .feedback3-bottom h1 {
+    font-size: 2.5vh;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+.feedback3 .feedback3-bottom h2 {
+  font-size: 2.5vh;
+  text-align: center;
+  margin: auto;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #767680;
+}
+
+@media (max-width: 768px) {
+  .feedback3 .feedback3-bottom h2 {
     font-size: 2.4vh;
   }
 }
@@ -559,7 +815,7 @@ nav {
 /*set of icons in the back ground */
 .icon-1 {
   position: absolute;
-  top: 124vh;
+  top: 120vh;
   left: 5vw;
   height: 15vh;
   z-index: 4;
@@ -568,23 +824,56 @@ nav {
 .icon-2 {
   position: absolute;
   top: 166vh;
-  right: 10vw;
+  right: 1vw;
   height: 15vh;
   z-index: 1;
 }
 
-.icon-4 {
+.icon-3 {
   position: absolute;
-  top: 110vh;
+  top: 120vh;
   right: 5vw;
   height: 15vh;
   z-index: 4;
 }
 
-.icon-5 {
+.icon-4 {
   position: absolute;
   top: 200vh;
-  left: 8vw;
+  left: 5vw;
+  height: 15vh;
+  z-index: 4;
+  border-radius: 2px solid white;
+}
+
+.icon-5 {
+  position: absolute;
+  top: 130vh;
+  left: 28vw;
+  height: 15vh;
+  z-index: 4;
+}
+
+.icon-6 {
+  position: absolute;
+  top: 166vh;
+  left: 1vw;
+  height: 15vh;
+  z-index: 1;
+}
+
+.icon-7 {
+  position: absolute;
+  top: 200vh;
+  right: 5vw;
+  height: 15vh;
+  z-index: 4;
+}
+
+.icon-8 {
+  position: absolute;
+  top: 130vh;
+  right: 30vw;
   height: 15vh;
   z-index: 4;
 }
