@@ -32,6 +32,18 @@ a {
   color: white;
 }
 
+body::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1c1c1e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #3fb779;
+}
+
 menu {
   height: 20vh;
   margin-bottom: 2.5vh;
@@ -47,11 +59,6 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 1rem;
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
-  -webkit-box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.171);
-  box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.171);
-  border-bottom: 1px solid #040405c7;
 }
 
 .logo-container {
