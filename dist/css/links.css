@@ -1591,7 +1591,7 @@ nav {
             flex: 0 1 95%;
   }
   .feedback1 {
-    top: 25vh;
+    top: 22vh;
     left: 0vh;
   }
   .feedback1 .feedback1-top {
@@ -1613,7 +1613,7 @@ nav {
             transform: none;
   }
   .feedback2 {
-    top: 43vh;
+    top: 40vh;
     right: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
