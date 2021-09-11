@@ -136,6 +136,10 @@
     border-radius: 1rem;
     border: none;
     position: relative;
+    &:hover {
+      background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
+      color: #ffffff;
+    }
     img {
       position: absolute;
       top: 0.1rem;
