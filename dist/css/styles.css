@@ -150,15 +150,15 @@ nav {
     display: flex;
   }
   .button-container .book-btn {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 500;
     color: white;
     text-decoration: none;
-    padding: 1.5rem 5rem 1.5rem 2rem;
+    padding: 1.5rem 4rem 1.2rem 2rem;
   }
   .button-container .book-btn img {
     position: absolute;
-    top: 0.4rem;
+    top: 0.2rem;
     height: 6vh;
   }
   .button-container .dm-a .dm {
@@ -259,7 +259,7 @@ nav {
   margin-left: 1.5vw;
   font-weight: 500;
   color: white;
-  background: #1C1C1E;
+  background: #1c1c1e;
   text-decoration: none;
   text-align: center;
   padding: 1.2rem 5rem 1.2rem 2rem;
@@ -355,23 +355,6 @@ nav {
           align-items: center;
 }
 
-@media (max-width: 768px) {
-  .feedback1 {
-    height: 15vh;
-    width: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .feedback1:hover {
   -webkit-transform: translateY(-0.6rem);
           transform: translateY(-0.6rem);
@@ -421,16 +404,6 @@ nav {
   place-content: center;
 }
 
-@media (max-width: 768px) {
-  .feedback1 .feedback1-bottom {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 78%;
-            flex: 0 1 78%;
-    margin-top: 0;
-    height: 90%;
-  }
-}
-
 .feedback1 .feedback1-bottom h1 {
   font-size: 3.5vh;
   padding: 8vh 2vw 4vh;
@@ -445,6 +418,7 @@ nav {
     font-size: 2.5vh;
     font-weight: 400;
     text-align: left;
+    text-align: center;
   }
 }
 
@@ -485,23 +459,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media (max-width: 768px) {
-  .feedback2 {
-    height: 15vh;
-    width: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .feedback2:hover {
@@ -553,16 +510,6 @@ nav {
   place-content: center;
 }
 
-@media (max-width: 768px) {
-  .feedback2 .feedback2-bottom {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 78%;
-            flex: 0 1 78%;
-    margin-top: 0;
-    height: 90%;
-  }
-}
-
 .feedback2 .feedback2-bottom h1 {
   font-size: 3.5vh;
   padding: 8vh 2vw 4vh;
@@ -577,6 +524,7 @@ nav {
     font-size: 2.5vh;
     font-weight: 400;
     text-align: left;
+    text-align: center;
   }
 }
 
@@ -617,23 +565,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media (max-width: 768px) {
-  .feedback3 {
-    height: 15vh;
-    width: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .feedback3:hover {
@@ -685,16 +616,6 @@ nav {
   place-content: center;
 }
 
-@media (max-width: 768px) {
-  .feedback3 .feedback3-bottom {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 78%;
-            flex: 0 1 78%;
-    margin-top: 0;
-    height: 90%;
-  }
-}
-
 .feedback3 .feedback3-bottom h1 {
   font-size: 3.5vh;
   padding: 8vh 2vw 4vh;
@@ -709,6 +630,7 @@ nav {
     font-size: 2.5vh;
     font-weight: 400;
     text-align: left;
+    text-align: center;
   }
 }
 
@@ -821,6 +743,12 @@ nav {
   z-index: 4;
 }
 
+@media (max-width: 768px) {
+  .icon-1 {
+    height: 3vh;
+  }
+}
+
 .icon-2 {
   position: absolute;
   top: 166vh;
@@ -829,12 +757,24 @@ nav {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .icon-2 {
+    height: 3vh;
+  }
+}
+
 .icon-3 {
   position: absolute;
   top: 120vh;
   right: 5vw;
   height: 15vh;
   z-index: 4;
+}
+
+@media (max-width: 768px) {
+  .icon-3 {
+    height: 3vh;
+  }
 }
 
 .icon-4 {
@@ -846,12 +786,24 @@ nav {
   border-radius: 2px solid white;
 }
 
+@media (max-width: 768px) {
+  .icon-4 {
+    height: 3vh;
+  }
+}
+
 .icon-5 {
   position: absolute;
   top: 130vh;
   left: 28vw;
   height: 15vh;
   z-index: 4;
+}
+
+@media (max-width: 768px) {
+  .icon-5 {
+    height: 3vh;
+  }
 }
 
 .icon-6 {
@@ -862,6 +814,12 @@ nav {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .icon-6 {
+    height: 3vh;
+  }
+}
+
 .icon-7 {
   position: absolute;
   top: 200vh;
@@ -870,10 +828,71 @@ nav {
   z-index: 4;
 }
 
+@media (max-width: 768px) {
+  .icon-7 {
+    height: 3vh;
+  }
+}
+
 .icon-8 {
   position: absolute;
   top: 130vh;
   right: 30vw;
   height: 15vh;
   z-index: 4;
+}
+
+@media (max-width: 768px) {
+  .icon-8 {
+    height: 3vh;
+  }
+}
+
+/*Responsive for mobile */
+@media (max-width: 768px) {
+  .land {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .land-left {
+    margin: 0;
+  }
+  .land-left h1 {
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+    font-size: 4.1vh;
+    line-height: 6.2vh;
+    text-align: center;
+  }
+  .land-left h4 {
+    font-size: 2vh;
+    line-height: 3.8vh;
+    text-align: center;
+    margin-bottom: 1vh;
+  }
+  .buttons-hero {
+    display: block;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .buttons-hero .reviewsbtn img {
+    height: 5vh;
+    margin-bottom: 1vh;
+  }
+  .buttons-hero .coursesbtn {
+    display: none;
+  }
+  .land-right {
+    display: block;
+  }
+  .land-right video {
+    height: 40vh;
+    border-radius: 2rem;
+    margin-bottom: 10vh;
+  }
+  .second {
+    display: none;
+  }
 }
