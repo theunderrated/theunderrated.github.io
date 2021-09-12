@@ -896,3 +896,12 @@ nav {
     display: none;
   }
 }
+
+/*iphone 5s responsive */
+@media (max-width: 360px) {
+  .land {
+    display: block;
+    width: 90%;
+    margin: 10vh auto 0vh auto;
+  }
+}

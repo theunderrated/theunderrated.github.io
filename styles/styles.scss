@@ -445,3 +445,11 @@
     display: none;
   }
 }
+/*iphone 5s responsive */
+@include media("<=phone") {
+  .land {
+    display: block;
+    width: 90%;
+    margin: 10vh auto 0vh auto;
+  }
+}
