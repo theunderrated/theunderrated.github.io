@@ -14,8 +14,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background: #2c2c2e;
   @include media("<=tablet") {
-    
+    height: 30vh;
+    width: 100%;
   }
 }
 @mixin feedback-bottom {
@@ -28,8 +30,7 @@
   display: grid;
   place-content: center;
   @include media("<=tablet") {
-    
-   
+    width: 90%;
   }
 }
 @mixin h2 {
@@ -46,10 +47,13 @@
     font-weight: 400;
     font-family: "Poppins", sans-serif;
     @include media("<=tablet") {
+      padding: 2vh 3vw 2vh;
       font-size: 2.5vh;
+      line-height: 4vh;
       font-weight: 400;
       text-align: left;
       text-align: center;
+      
     }
   }
   h2 {
@@ -402,6 +406,7 @@
     display: block;
     width: 90%;
     margin: auto;
+    margin-bottom: 25vh;
   }
   .land-left {
     margin: 0;
@@ -442,7 +447,49 @@
     }
   }
   .second {
-    display: none;
+    display: block;
+    margin: 0;
+    &-inner {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .feedback1 {
+    flex: 0%;
+    margin-left: 5.5rem;
+    margin-bottom: 10vh;
+    #{&}-top {
+      img {
+        top: -9vh;
+        left: 15%;
+        height: 22vh;
+      }
+    }
+  }
+  .feedback2 {
+    flex: 0%;
+    margin-left: 5.5rem;
+    margin-bottom: 10vh;
+    #{&}-top {
+      img {
+        top: -8vh;
+        left: 12%;
+        height: 20vh;
+      }
+    }
+  }
+  .feedback3 {
+    flex: 0%;
+    margin-left: 5.5rem;
+    margin-bottom: 20vh;
+    #{&}-top {
+      img {
+        top: -8vh;
+        left: 12%;
+        height: 20vh;
+      }
+    }
   }
 }
 /*iphone 5s responsive */

@@ -353,6 +353,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #2c2c2e;
+}
+
+@media (max-width: 768px) {
+  .feedback1 {
+    height: 30vh;
+    width: 100%;
+  }
 }
 
 .feedback1:hover {
@@ -404,6 +412,12 @@ nav {
   place-content: center;
 }
 
+@media (max-width: 768px) {
+  .feedback1 .feedback1-bottom {
+    width: 90%;
+  }
+}
+
 .feedback1 .feedback1-bottom h1 {
   font-size: 3.5vh;
   padding: 8vh 2vw 4vh;
@@ -415,7 +429,9 @@ nav {
 
 @media (max-width: 768px) {
   .feedback1 .feedback1-bottom h1 {
+    padding: 2vh 3vw 2vh;
     font-size: 2.5vh;
+    line-height: 4vh;
     font-weight: 400;
     text-align: left;
     text-align: center;
@@ -459,6 +475,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #2c2c2e;
+}
+
+@media (max-width: 768px) {
+  .feedback2 {
+    height: 30vh;
+    width: 100%;
+  }
 }
 
 .feedback2:hover {
@@ -510,6 +534,12 @@ nav {
   place-content: center;
 }
 
+@media (max-width: 768px) {
+  .feedback2 .feedback2-bottom {
+    width: 90%;
+  }
+}
+
 .feedback2 .feedback2-bottom h1 {
   font-size: 3.5vh;
   padding: 8vh 2vw 4vh;
@@ -521,7 +551,9 @@ nav {
 
 @media (max-width: 768px) {
   .feedback2 .feedback2-bottom h1 {
+    padding: 2vh 3vw 2vh;
     font-size: 2.5vh;
+    line-height: 4vh;
     font-weight: 400;
     text-align: left;
     text-align: center;
@@ -565,6 +597,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #2c2c2e;
+}
+
+@media (max-width: 768px) {
+  .feedback3 {
+    height: 30vh;
+    width: 100%;
+  }
 }
 
 .feedback3:hover {
@@ -616,6 +656,12 @@ nav {
   place-content: center;
 }
 
+@media (max-width: 768px) {
+  .feedback3 .feedback3-bottom {
+    width: 90%;
+  }
+}
+
 .feedback3 .feedback3-bottom h1 {
   font-size: 3.5vh;
   padding: 8vh 2vw 4vh;
@@ -627,7 +673,9 @@ nav {
 
 @media (max-width: 768px) {
   .feedback3 .feedback3-bottom h1 {
+    padding: 2vh 3vw 2vh;
     font-size: 2.5vh;
+    line-height: 4vh;
     font-weight: 400;
     text-align: left;
     text-align: center;
@@ -854,6 +902,7 @@ nav {
     display: block;
     width: 90%;
     margin: auto;
+    margin-bottom: 25vh;
   }
   .land-left {
     margin: 0;
@@ -893,7 +942,54 @@ nav {
     margin-bottom: 10vh;
   }
   .second {
-    display: none;
+    display: block;
+    margin: 0;
+  }
+  .second-inner {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feedback1 {
+    -webkit-box-flex: 0%;
+        -ms-flex: 0%;
+            flex: 0%;
+    margin-left: 5.5rem;
+    margin-bottom: 10vh;
+  }
+  .feedback1 .feedback1-top img {
+    top: -9vh;
+    left: 15%;
+    height: 22vh;
+  }
+  .feedback2 {
+    -webkit-box-flex: 0%;
+        -ms-flex: 0%;
+            flex: 0%;
+    margin-left: 5.5rem;
+    margin-bottom: 10vh;
+  }
+  .feedback2 .feedback2-top img {
+    top: -8vh;
+    left: 12%;
+    height: 20vh;
+  }
+  .feedback3 {
+    -webkit-box-flex: 0%;
+        -ms-flex: 0%;
+            flex: 0%;
+    margin-left: 5.5rem;
+    margin-bottom: 20vh;
+  }
+  .feedback3 .feedback3-top img {
+    top: -8vh;
+    left: 12%;
+    height: 20vh;
   }
 }
 
