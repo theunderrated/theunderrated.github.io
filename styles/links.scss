@@ -12,11 +12,8 @@
   height: 40vh; 
   width: 15vw;
   position: absolute;
-  background: white;
   background: #1c1c1e;
   backdrop-filter: blur(8rem);
-  -webkit-backdrop-filter: blur(8rem);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   box-shadow: 1px 1px 2px 1px #2c2c2e;
   border-radius: 1rem;
   z-index: 2;
@@ -39,7 +36,6 @@
   background: white;
   background: #2c2c2e;
   backdrop-filter: blur(10rem);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   border-radius: 1rem;
   display: grid;
