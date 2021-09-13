@@ -935,28 +935,30 @@ nav {
     height: 22vh;
   }
   .feedback2 {
-    -webkit-box-flex: 0%;
-        -ms-flex: 0%;
-            flex: 0%;
+    /*flex: 0%;
     margin-left: 5.5rem;
     margin-bottom: 10vh;
-  }
-  .feedback2 .feedback2-top img {
-    top: -8vh;
-    left: 12%;
-    height: 20vh;
+    .feedback2-top {
+      img {
+        top: -8vh;
+        left: 12%;
+        height: 20vh;
+      }
+    }*/
+    display: none;
   }
   .feedback3 {
-    -webkit-box-flex: 0%;
-        -ms-flex: 0%;
-            flex: 0%;
+    /*flex: 0%;
     margin-left: 5.5rem;
     margin-bottom: 20vh;
-  }
-  .feedback3 .feedback3-top img {
-    top: -8vh;
-    left: 12%;
-    height: 20vh;
+    .feedback3-top {
+      img {
+        top: -8vh;
+        left: 12%;
+        height: 20vh;
+      }
+    }*/
+    display: none;
   }
 }
 
