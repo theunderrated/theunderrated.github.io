@@ -68,7 +68,7 @@
     text-align: center;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color: #767680;
+    color: black;
     @include media("<=tablet") {
       font-size: 2.4vh;
     }
@@ -78,7 +78,7 @@
     text-align: center;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-    color: #040405;
+    color: #767680;
     @include media("<=tablet") {
       font-size: 1.5vh;
     }

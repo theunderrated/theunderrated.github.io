@@ -203,6 +203,12 @@ nav {
   height: 345vh;
 }
 
+@media (max-width: 768px) {
+  .glass {
+    height: 360vh;
+  }
+}
+
 /*hero section */
 .land {
   width: 95%;
@@ -908,9 +914,8 @@ nav {
     display: none;
   }
   .second-mobile {
-    height: 100vh;
+    height: 120vh;
     display: block;
-    background-color: #ffffff;
     width: 90%;
     margin: auto;
   }
@@ -926,10 +931,11 @@ nav {
             flex-direction: column;
   }
   .second-mobile-inner-1 {
+    margin-top: 8vh;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30vh;
             flex: 0 0 30vh;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
     background: #1c1c1e;
     -webkit-backdrop-filter: blur(8rem);
             backdrop-filter: blur(8rem);
@@ -951,7 +957,6 @@ nav {
   .second-mobile-inner-1-1 {
     width: 90%;
     height: 18vh;
-    background: white;
     background: #2c2c2e;
     -webkit-backdrop-filter: blur(10rem);
             backdrop-filter: blur(10rem);
@@ -1003,19 +1008,28 @@ nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30vh;
             flex: 0 0 30vh;
+    margin-bottom: 8vh;
     background: #1c1c1e;
     -webkit-backdrop-filter: blur(8rem);
             backdrop-filter: blur(8rem);
     -webkit-box-shadow: 1px 1px 2px 1px #2c2c2e;
             box-shadow: 1px 1px 2px 1px #2c2c2e;
     border-radius: 1rem;
+    position: relative;
     z-index: 2;
-    margin-bottom: 5vh;
+  }
+  .second-mobile-inner-2 img {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 20vh;
+    z-index: 3;
   }
   .second-mobile-inner-2-2 {
     width: 90%;
     height: 18vh;
-    background: white;
     background: #2c2c2e;
     -webkit-backdrop-filter: blur(10rem);
             backdrop-filter: blur(10rem);
@@ -1067,19 +1081,28 @@ nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30vh;
             flex: 0 0 30vh;
+    margin-bottom: 8vh;
     background: #1c1c1e;
     -webkit-backdrop-filter: blur(8rem);
             backdrop-filter: blur(8rem);
     -webkit-box-shadow: 1px 1px 2px 1px #2c2c2e;
             box-shadow: 1px 1px 2px 1px #2c2c2e;
     border-radius: 1rem;
+    position: relative;
     z-index: 2;
-    margin-bottom: 5vh;
+  }
+  .second-mobile-inner-3 img {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 20vh;
+    z-index: 3;
   }
   .second-mobile-inner-3-3 {
     width: 90%;
     height: 18vh;
-    background: white;
     background: #2c2c2e;
     -webkit-backdrop-filter: blur(10rem);
             backdrop-filter: blur(10rem);
