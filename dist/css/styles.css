@@ -205,7 +205,7 @@ nav {
 
 @media (max-width: 768px) {
   .glass {
-    height: 360vh;
+    height: 365vh;
   }
 }
 
@@ -878,7 +878,7 @@ nav {
     margin: 0;
   }
   .land-left h1 {
-    margin-top: -2vh;
+    margin-top: -0.5vh;
     margin-bottom: 1vh;
     font-size: 4.1vh;
     line-height: 6.2vh;

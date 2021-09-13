@@ -63,7 +63,7 @@
 .glass {
   height: 345vh;
   @include media("<=tablet") {
-    height: 360vh;
+    height: 365vh;
   }
 }
 /*hero section */
@@ -408,7 +408,7 @@
   .land-left {
     margin: 0;
     h1 {
-      margin-top: -2vh;
+      margin-top: -0.5vh;
       margin-bottom: 1vh;
       font-size: 4.1vh;
       line-height: 6.2vh;
