@@ -356,11 +356,9 @@ nav {
   background: #2c2c2e;
 }
 
-@media (max-width: 768px) {
-  .feedback1 {
-    height: 30vh;
-    width: 100%;
-  }
+.feedback1:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 .feedback1 .feedback1-top {
@@ -384,6 +382,12 @@ nav {
   transition-property: transform, -webkit-transform;
 }
 
+.feedback1 .feedback1-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 5;
+}
+
 .feedback1 .feedback1-bottom {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60vh;
@@ -399,12 +403,6 @@ nav {
   display: -ms-grid;
   display: grid;
   place-content: center;
-}
-
-@media (max-width: 768px) {
-  .feedback1 .feedback1-bottom {
-    width: 90%;
-  }
 }
 
 .feedback1 .feedback1-bottom h1 {
@@ -467,11 +465,9 @@ nav {
   background: #2c2c2e;
 }
 
-@media (max-width: 768px) {
-  .feedback2 {
-    height: 30vh;
-    width: 100%;
-  }
+.feedback2:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 .feedback2 .feedback2-top {
@@ -495,6 +491,12 @@ nav {
   transition-property: transform, -webkit-transform;
 }
 
+.feedback2 .feedback2-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 5;
+}
+
 .feedback2 .feedback2-bottom {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60vh;
@@ -510,12 +512,6 @@ nav {
   display: -ms-grid;
   display: grid;
   place-content: center;
-}
-
-@media (max-width: 768px) {
-  .feedback2 .feedback2-bottom {
-    width: 90%;
-  }
 }
 
 .feedback2 .feedback2-bottom h1 {
@@ -578,11 +574,9 @@ nav {
   background: #2c2c2e;
 }
 
-@media (max-width: 768px) {
-  .feedback3 {
-    height: 30vh;
-    width: 100%;
-  }
+.feedback3:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 .feedback3 .feedback3-top {
@@ -606,6 +600,12 @@ nav {
   transition-property: transform, -webkit-transform;
 }
 
+.feedback3 .feedback3-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 5;
+}
+
 .feedback3 .feedback3-bottom {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60vh;
@@ -621,12 +621,6 @@ nav {
   display: -ms-grid;
   display: grid;
   place-content: center;
-}
-
-@media (max-width: 768px) {
-  .feedback3 .feedback3-bottom {
-    width: 90%;
-  }
 }
 
 .feedback3 .feedback3-bottom h1 {
@@ -863,13 +857,16 @@ nav {
   }
 }
 
+.second-mobile {
+  display: none;
+}
+
 /*Responsive for mobile */
 @media (max-width: 768px) {
   .land {
     display: block;
     width: 90%;
     margin: auto;
-    margin-bottom: 25vh;
   }
   .land-left {
     margin: 0;
@@ -906,14 +903,20 @@ nav {
   .land-right video {
     height: 40vh;
     border-radius: 2rem;
-    margin-bottom: 10vh;
   }
   .second {
-    display: block;
-    margin: 0;
+    display: none;
   }
-  .second-inner {
-    margin: 0;
+  .second-mobile {
+    height: 100vh;
+    display: block;
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+  }
+  .second-mobile-inner {
+    width: 90%;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -922,43 +925,26 @@ nav {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .feedback1 {
-    -webkit-box-flex: 0%;
-        -ms-flex: 0%;
-            flex: 0%;
-    margin-left: 5.5rem;
-    margin-bottom: 10vh;
+  .second-mobile-inner-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30vh;
+            flex: 0 0 30vh;
+    background-color: #3fb779;
+    margin-bottom: 5vh;
   }
-  .feedback1 .feedback1-top img {
-    top: -7vh;
-    left: 17%;
-    height: 22vh;
+  .second-mobile-inner-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30vh;
+            flex: 0 0 30vh;
+    background-color: #3fb779;
+    margin-bottom: 5vh;
   }
-  .feedback2 {
-    /*flex: 0%;
-    margin-left: 5.5rem;
-    margin-bottom: 10vh;
-    .feedback2-top {
-      img {
-        top: -8vh;
-        left: 12%;
-        height: 20vh;
-      }
-    }*/
-    display: none;
-  }
-  .feedback3 {
-    /*flex: 0%;
-    margin-left: 5.5rem;
-    margin-bottom: 20vh;
-    .feedback3-top {
-      img {
-        top: -8vh;
-        left: 12%;
-        height: 20vh;
-      }
-    }*/
-    display: none;
+  .second-mobile-inner-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30vh;
+            flex: 0 0 30vh;
+    background-color: #3fb779;
+    margin-bottom: 5vh;
   }
 }
 

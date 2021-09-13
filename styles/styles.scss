@@ -15,10 +15,6 @@
   justify-content: flex-start;
   align-items: center;
   background: #2c2c2e;
-  @include media("<=tablet") {
-    height: 30vh;
-    width: 100%;
-  }
 }
 @mixin feedback-bottom {
   flex: 0 1 60vh;
@@ -29,9 +25,6 @@
   border-radius: 1rem;
   display: grid;
   place-content: center;
-  @include media("<=tablet") {
-    width: 90%;
-  }
 }
 @mixin h2 {
   font-size: 4.5vh;
@@ -174,7 +167,9 @@
 .feedback1 {
   flex: 0 0 20vw;
   @include feedback-drop;
-
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
   #{&}-top {
     flex: 0 1 12vh;
     width: 100%;
@@ -188,6 +183,10 @@
       transition: 3s ease;
       transition-property: transform;
     }
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
   }
   #{&}-bottom {
     @include feedback-bottom();
@@ -196,8 +195,10 @@
 }
 .feedback2 {
   flex: 0 0 20vw;
-
   @include feedback-drop;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
 
   #{&}-top {
     flex: 0 1 12vh;
@@ -212,6 +213,10 @@
       transition: 3s ease;
       transition-property: transform;
     }
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
   }
   #{&}-bottom {
     @include feedback-bottom();
@@ -220,8 +225,10 @@
 }
 .feedback3 {
   flex: 0 0 20vw;
-
   @include feedback-drop;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
 
   #{&}-top {
     flex: 0 1 12vh;
@@ -236,7 +243,10 @@
       transition: 3s ease;
       transition-property: transform;
     }
-    
+    &:hover {
+      transform: scale(1.1);
+      z-index: 5;
+    }
   }
   #{&}-bottom {
     @include feedback-bottom();
@@ -382,13 +392,15 @@
     height: 3vh;
   }
 }
+.second-mobile {
+  display: none;
+}
 /*Responsive for mobile */
 @include media("<=tablet") {
   .land {
     display: block;
     width: 90%;
     margin: auto;
-    margin-bottom: 25vh;
   }
   .land-left {
     margin: 0;
@@ -425,58 +437,42 @@
     video {
       height: 40vh;
       border-radius: 2rem;
-      margin-bottom: 10vh;
     }
   }
   .second {
-    display: block;
-    margin: 0;
-    &-inner {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  .feedback1 {
-    flex: 0%;
-    margin-left: 5.5rem;
-    margin-bottom: 10vh;
-
-    #{&}-top {
-      img {
-        top: -7vh;
-        left: 17%;
-        height: 22vh;
-      }
-    }
-  }
-  .feedback2 {
-    /*flex: 0%;
-    margin-left: 5.5rem;
-    margin-bottom: 10vh;
-    #{&}-top {
-      img {
-        top: -8vh;
-        left: 12%;
-        height: 20vh;
-      }
-    }*/
     display: none;
   }
-  .feedback3 {
-    /*flex: 0%;
-    margin-left: 5.5rem;
-    margin-bottom: 20vh;
-    #{&}-top {
-      img {
-        top: -8vh;
-        left: 12%;
-        height: 20vh;
+  .second-mobile {
+    height: 100vh;
+    display: block;
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+
+    &-inner {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      &-1 {
+        flex: 0 0 30vh;
+        background-color: #3fb779;
+        margin-bottom: 5vh;
       }
-    }*/display: none;
+      &-2 {
+        flex: 0 0 30vh;
+        background-color: #3fb779;
+        margin-bottom: 5vh;
+      }
+      &-3 {
+        flex: 0 0 30vh;
+        background-color: #3fb779;
+        margin-bottom: 5vh;
+      }
+    }
   }
-  
 }
+
 /*iphone 5s responsive */
 @include media("<=phone") {
   .land {
