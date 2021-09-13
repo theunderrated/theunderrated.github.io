@@ -6,7 +6,7 @@
   align-items: center;
 }
 @mixin feedback-drop {
-  height: 80vh;
+  height: 60vh;
   backdrop-filter: blur(0);
   border-radius: 1rem;
   z-index: 2;
@@ -17,7 +17,7 @@
   background: #2c2c2e;
 }
 @mixin feedback-bottom {
-  flex: 0 1 60vh;
+  flex: 0 1 40vh;
   width: 90%;
   background: linear-gradient(to left bottom, #1c1c1e91, #1c1c1e94);
   backdrop-filter: blur(2rem);
@@ -34,7 +34,7 @@
 @mixin fonts-bottom {
   h1 {
     font-size: 3.5vh;
-    padding: 8vh 2vw 4vh;
+    padding: 5vh 2vw 1vh;
     text-align: center;
     line-height: 6vh;
     font-weight: 400;
@@ -61,7 +61,7 @@
   }
 }
 .glass {
-  height: 345vh;
+  height: 370vh;
   @include media("<=tablet") {
     height: 365vh;
   }
@@ -149,6 +149,20 @@
 
 /* end of hero section */
 /*second section */
+.second-head {
+  font-size: 5.4vh;
+  margin-bottom: 5vh;
+  line-height: 4vh;
+  font-weight: 400;
+  text-align: center;
+  @include media("<=tablet") {
+    margin-bottom: 0;
+    font-size: 2.6vh;
+    line-height: 4vh;
+    font-weight: 400;
+    text-align: center;
+  }
+}
 .second {
   height: 80vh;
   width: 95%;
@@ -179,7 +193,7 @@
 
     img {
       position: absolute;
-      top: -2vh;
+      top: -12vh;
       left: -5%;
       height: 38vh;
       z-index: 5;
@@ -209,7 +223,7 @@
 
     img {
       position: absolute;
-      top: -2vh;
+      top: -10vh;
       left: -4%;
       height: 32vh;
       z-index: 5;
@@ -239,7 +253,7 @@
 
     img {
       position: absolute;
-      top: -2vh;
+      top: -10vh;
       left: -5%;
       height: 32vh;
       z-index: 5;
@@ -258,6 +272,21 @@
 }
 /* end of section two */
 /* third section */
+.third-head {
+  margin-top: 8vh;
+  font-size: 5.4vh;
+  line-height: 4vh;
+  font-weight: 400;
+  text-align: center;
+  @include media("<=tablet") {
+    padding: 0vh 3vw 1vh;
+    font-size: 2.6vh;
+    line-height: 4vh;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 4vh;
+  }
+}
 .third {
   height: 100vh;
   width: 95%;
@@ -315,7 +344,7 @@
 /*set of icons in the back ground */
 .icon-1 {
   position: absolute;
-  top: 120vh;
+  top: 130vh;
   left: 5vw;
   height: 15vh;
   z-index: 4;
@@ -325,7 +354,7 @@
 }
 .icon-2 {
   position: absolute;
-  top: 166vh;
+  top: 176vh;
   right: 1vw;
   height: 15vh;
   z-index: 1;
@@ -336,7 +365,7 @@
 
 .icon-3 {
   position: absolute;
-  top: 120vh;
+  top: 130vh;
   right: 5vw;
   height: 15vh;
   z-index: 4;
@@ -346,7 +375,7 @@
 }
 .icon-4 {
   position: absolute;
-  top: 200vh;
+  top: 210vh;
   left: 5vw;
   height: 15vh;
   z-index: 4;
@@ -357,7 +386,7 @@
 }
 .icon-5 {
   position: absolute;
-  top: 130vh;
+  top: 140vh;
   left: 28vw;
   height: 15vh;
   z-index: 4;
@@ -367,7 +396,7 @@
 }
 .icon-6 {
   position: absolute;
-  top: 166vh;
+  top: 176vh;
   left: 1vw;
   height: 15vh;
   z-index: 1;
@@ -377,7 +406,7 @@
 }
 .icon-7 {
   position: absolute;
-  top: 200vh;
+  top: 210vh;
   right: 5vw;
   height: 15vh;
   z-index: 4;
@@ -387,7 +416,7 @@
 }
 .icon-8 {
   position: absolute;
-  top: 130vh;
+  top: 140vh;
   right: 30vw;
   height: 15vh;
   z-index: 4;
@@ -456,6 +485,7 @@
       margin: auto;
       display: flex;
       flex-direction: column;
+
       &-1 {
         margin-top: 8vh;
         flex: 0 0 30vh;
@@ -542,6 +572,23 @@
           @include fonts-bottom;
         }
       }
+    }
+  }
+  .third {
+    height: 90vh;
+    width: 95%;
+    margin: 2vh auto 2vh auto;
+    display: flex;
+    align-items: center;
+    &-container {
+      width: 90%;
+      height: 90vh;
+      margin: auto;
+      background: #2c2c2e;
+      border-radius: 3rem;
+      backdrop-filter: blur(2rem);
+      -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
     }
   }
 }
