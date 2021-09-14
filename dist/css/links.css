@@ -131,6 +131,8 @@ nav {
 .button-container .dm-a .dm {
   margin-left: 2rem;
   height: 6vh;
+  background-color: #2c2c2e;
+  border-radius: 20%;
 }
 
 .button-container .dm-a .dm:hover {
