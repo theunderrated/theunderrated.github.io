@@ -14,3 +14,15 @@ tabs.forEach(tab =>{
     })
     
 })
+
+const ts = document.querySelectorAll('[data-t-target]')
+const tContents = document.querySelectorAll('[data-t-content]')
+ts.forEach(t => {
+    t.addEventListener('click', () => {
+        const target = document.querySelector(t.dataset.tTarget)
+        tContents.forEach(tcontent =>{
+            tcontent.classList.remove('active')
+        })
+        target.classList.add('active')
+    })
+})

@@ -348,8 +348,6 @@
 .tab:hover {
   background-color: #1c1c1e;
 }
-
-
 [data-tab-content] {
   display: none;
 }
@@ -362,16 +360,23 @@
   width: 100%;
   background: #1c1c1e;
   &-top {
-    flex: 0 1 75%;
+    flex: 0 1 25%;
     background-color: red;
   }
   &-bottom{
-    flex: 0 1 25%;
+    flex: 0 1 75%;
     background-color: blue;
   }
   
 }
-
+/*this is for the inner tabs put this somewhere else */
+[data-t-content]{
+  display: none;
+}
+.active[data-t-content]{
+  display: block;
+}
+/*up to here style the above in the end */
 /*set of icons in the back ground */
 .icon-1 {
   position: absolute;
