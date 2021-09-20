@@ -23,6 +23,10 @@ ts.forEach(t => {
         tContents.forEach(tcontent =>{
             tcontent.classList.remove('active')
         })
+        ts.forEach(t => {
+            t.classList.remove('active')
+        })
+        t.classList.add('active')
         target.classList.add('active')
     })
 })
