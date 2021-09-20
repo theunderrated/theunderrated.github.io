@@ -753,7 +753,11 @@ nav {
 .third-container-2 {
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
-  background-color: #2c2c2e;
+  background: #2c2c2e;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
   height: 100%;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60%;
@@ -886,7 +890,9 @@ nav {
 }
 
 .inner-bottom ul li {
-  color: #767680;
+  background: #1c1c1e;
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
+          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
@@ -895,7 +901,6 @@ nav {
   padding: 1.2rem 1rem;
   border-radius: 1rem;
   list-style: none;
-  background-color: #1c1c1e;
   cursor: pointer;
 }
 
@@ -919,6 +924,7 @@ nav {
 .t-inside-top h2 {
   font-size: 2.8vh;
   font-weight: 600;
+  border-bottom: 1px solid #545458;
 }
 
 .t-inside-top h4 {
@@ -941,21 +947,19 @@ nav {
 }
 
 .t.active {
-  background-color: #3fb779c2;
-  color: white;
+  background: -webkit-gradient(linear, right top, left bottom, from(#fafafa91), to(#ffd52efb));
+  background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
+  color: #040405;
   border-radius: 1.5rem;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
           box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-  border: 1px solid #545458;
 }
 
 .t:hover {
-  background: -webkit-gradient(linear, right top, left bottom, from(#2c2c2e91), to(#2c2c2e94));
-  background: linear-gradient(to left bottom, #2c2c2e91, #2c2c2e94);
+  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#3fb779fb));
+  background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
+  color: #040405;
   border-radius: 0.5rem;
-  border: 1px solid #545458;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
 }
 
 /*this is for the inner tabs put this somewhere else */
@@ -977,7 +981,9 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 65vh;
           flex: 0 1 65vh;
-  background-color: #2c2c2e;
+  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#3fb779fb));
+  background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
+  color: #040405;
   border-radius: 1.5rem;
   margin-bottom: 1vh;
 }
@@ -991,17 +997,19 @@ nav {
   text-align: center;
   font-size: 2.5vh;
   font-weight: 600;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid #545458;
 }
 
 .description-inner h3 {
   font-size: 2.4vh;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .description-inner h4 {
   margin-top: 1vh;
   font-size: 2vh;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .date {
