@@ -79,7 +79,7 @@
   margin-left: 2vw;
   h1 {
     margin-top: 2vh;
-    font-size: 9.8vh;
+    font-size: 9vh;
     font-weight: 500;
     line-height: 11vh;
     font-family: "Poppins", sans-serif;
@@ -316,8 +316,8 @@
       border-top-left-radius: 2rem;
       border-bottom-left-radius: 2rem;
       background: #2c2c2e;
-    backdrop-filter: blur(1rem);
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
+      backdrop-filter: blur(1rem);
+      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
       height: 100%;
       flex: 0 1 60%;
     }
@@ -325,7 +325,6 @@
       padding: 2rem;
       height: 100%;
       flex: 0 1 20%;
-      
     }
   }
 }
@@ -379,12 +378,26 @@
   width: 100%;
   align-items: center;
   &-top {
-    margin-top: 2vh;
+    margin-top: 1vh;
     width: 90%;
     background-color: #1c1c1e;
     border-radius: 2rem;
     padding: 2rem;
     flex: 0 1 25%;
+    h1 {
+      background: linear-gradient(to right bottom, #fafaface, #3fb779fb);
+      text-shadow: none;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Poppins", sans-serif;
+      font-size: 4vh;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 2.2vh;
+      font-weight: 400;
+    }
   }
   &-bottom {
     flex: 0 1 70%;
@@ -404,16 +417,25 @@
         border-radius: 1rem;
         list-style: none;
         cursor: pointer;
+
+        h5 {
+          width: 90%;
+          font-size: 1.8vh;
+          font-weight: 400;
+          border-bottom: 1.5px solid #545458;
+        }
       }
     }
   }
 }
+/*the boxes inside the panel */
 .t-inside {
   display: flex;
   flex-direction: column;
   height: 100%;
   &-top {
     flex: 0 1 90%;
+
     h2 {
       font-size: 2.8vh;
       font-weight: 600;
@@ -441,27 +463,22 @@
   color: #040405;
   border-radius: 1.5rem;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-
 }
 .t:hover {
   background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
   color: #040405;
   border-radius: 0.5rem;
- 
- 
 }
 /*this is for the inner tabs put this somewhere else */
+/*the final right side of the panel */
 [data-t-content] {
   display: none;
 }
 .active[data-t-content] {
   display: flex;
   flex-direction: column;
-
-
 }
 .description {
-  
   flex: 0 1 65vh;
   background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
   color: #040405;
@@ -477,11 +494,11 @@
       padding-bottom: 1vh;
       border-bottom: 1px solid #545458;
     }
-    h3{
+    h3 {
       font-size: 2.4vh;
       font-weight: 500;
     }
-    h4{
+    h4 {
       margin-top: 1vh;
       font-size: 2vh;
       font-weight: 600;
@@ -490,9 +507,8 @@
 }
 .date {
   flex: 0 1 18vh;
-  background: linear-gradient(to right bottom, #fafafa91, #71A5EDfb);
+  background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
   border-radius: 0.5rem;
-  
 }
 
 /*up to here style the above in the end */

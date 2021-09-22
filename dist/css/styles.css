@@ -231,7 +231,7 @@ nav {
 
 .land-left h1 {
   margin-top: 2vh;
-  font-size: 9.8vh;
+  font-size: 9vh;
   font-weight: 500;
   line-height: 11vh;
   font-family: "Poppins", sans-serif;
@@ -860,7 +860,7 @@ nav {
 }
 
 .inner-top {
-  margin-top: 2vh;
+  margin-top: 1vh;
   width: 90%;
   background-color: #1c1c1e;
   border-radius: 2rem;
@@ -868,6 +868,23 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
+}
+
+.inner-top h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#fafaface), to(#3fb779fb));
+  background: linear-gradient(to right bottom, #fafaface, #3fb779fb);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.inner-top h3 {
+  font-size: 2.2vh;
+  font-weight: 400;
 }
 
 .inner-bottom {
@@ -905,6 +922,14 @@ nav {
   cursor: pointer;
 }
 
+.inner-bottom ul li h5 {
+  width: 90%;
+  font-size: 1.8vh;
+  font-weight: 400;
+  border-bottom: 1.5px solid #545458;
+}
+
+/*the boxes inside the panel */
 .t-inside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,6 +989,7 @@ nav {
 }
 
 /*this is for the inner tabs put this somewhere else */
+/*the final right side of the panel */
 [data-t-content] {
   display: none;
 }
@@ -1017,8 +1043,8 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 18vh;
           flex: 0 1 18vh;
-  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#71A5EDfb));
-  background: linear-gradient(to right bottom, #fafafa91, #71A5EDfb);
+  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#71a5edfb));
+  background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
   border-radius: 0.5rem;
 }
 
