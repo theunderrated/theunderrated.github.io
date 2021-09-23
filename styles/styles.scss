@@ -465,13 +465,14 @@
 .t.active {
   background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
   color: #040405;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
 }
 .t:hover {
   background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
   color: #040405;
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
+ 
 }
 /*this is for the inner tabs put this somewhere else */
 /*the final right side of the panel */
@@ -484,9 +485,7 @@
   
 }
 .description {
-  flex: 0 1 65vh;
-  background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
-  color: #040405;
+  flex: 0 1 65vh;  color: #ffffff;
   border-radius: 1.5rem;
   margin-bottom: 1vh;
   &-inner {
