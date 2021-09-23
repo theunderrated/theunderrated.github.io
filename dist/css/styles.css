@@ -708,7 +708,7 @@ nav {
 .third {
   height: 100vh;
   width: 95%;
-  margin: 6vh auto 0vh auto;
+  margin: 1vh auto 0vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,14 +860,13 @@ nav {
 }
 
 .inner-top {
-  margin-top: 1vh;
   width: 90%;
-  background-color: #1c1c1e;
-  border-radius: 2rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+      -ms-flex: 0 1 20vh;
+          flex: 0 1 20vh;
+  border-bottom: 1px solid;
+  /*text in the tab middile part the h1 the h3 */
 }
 
 .inner-top h1 {
@@ -878,24 +877,29 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Poppins", sans-serif;
-  font-size: 4vh;
+  font-size: 4.2vh;
   font-weight: 600;
+  padding-bottom: 1vh;
 }
 
 .inner-top h3 {
-  font-size: 2.2vh;
+  font-size: 2.5vh;
   font-weight: 400;
+  padding-bottom: 1vh;
 }
 
 .inner-bottom {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 70%;
-          flex: 0 1 70%;
+      -ms-flex: 0 1 80vh;
+          flex: 0 1 80vh;
   width: 100%;
-  padding: 2rem;
+  padding: 0rem 2rem;
+  margin-top: 2vh;
 }
 
 .inner-bottom ul {
+  margin-top: 2vh;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,14 +912,12 @@ nav {
 }
 
 .inner-bottom ul li {
-  background: #1c1c1e;
-  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
-          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
+  border: 1px solid;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
-  margin-top: 1.5vh;
-  height: 30vh;
+  margin: 1.5vh 0vh;
+  height: 100%;
   padding: 1.2rem 1rem;
   border-radius: 1rem;
   list-style: none;
@@ -1008,8 +1010,8 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 65vh;
           flex: 0 1 65vh;
-  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#3fb779fb));
-  background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
+  background: -webkit-gradient(linear, right top, left bottom, from(#fafafa91), to(#ffd52efb));
+  background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
   color: #040405;
   border-radius: 1.5rem;
   margin-bottom: 1vh;
