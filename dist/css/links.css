@@ -61,6 +61,8 @@ nav {
   padding: 1rem;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
   border-bottom: 1px solid #040405c7;
 }
 
@@ -125,8 +127,6 @@ nav {
 .button-container .dm-a .dm {
   margin-left: 2rem;
   height: 6vh;
-  background-color: #2c2c2e;
-  border-radius: 20%;
 }
 
 .button-container .dm-a .dm:hover {
@@ -226,8 +226,6 @@ nav {
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   background: #1c1c1e;
-  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
-          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
 }
 
 .links .links-header {
@@ -270,8 +268,6 @@ nav {
   background: #2c2c2e;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
-  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
-          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
   border-bottom: 1px solid;
 }
 
@@ -284,8 +280,6 @@ nav {
   background: #1c1c1e;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
-  -webkit-box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
-          box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,8 +378,6 @@ nav {
 .links .links-container .links-container-inner-l1-right ul li ul li:hover {
   background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
   background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
 }
@@ -515,8 +507,6 @@ nav {
 .links .links-container .links-container-inner-l2-right ul li ul li:hover {
   background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
   background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
 }
@@ -646,8 +636,6 @@ nav {
 .links .links-container .links-container-inner-l3-right ul li ul li:hover {
   background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
   background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
 }
@@ -777,8 +765,6 @@ nav {
 .links .links-container .links-container-inner-l4-right ul li ul li:hover {
   background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
   background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
 }
@@ -911,8 +897,6 @@ nav {
 .links .links-container .links-container-inner-l5-right ul li ul li:hover {
   background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
   background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
 }
@@ -968,8 +952,6 @@ nav {
   background: #1c1c1e;
   -webkit-backdrop-filter: blur(8rem);
           backdrop-filter: blur(8rem);
-  -webkit-box-shadow: 1px 1px 2px 1px #2c2c2e;
-          box-shadow: 1px 1px 2px 1px #2c2c2e;
   border-radius: 1rem;
   z-index: 2;
   display: -webkit-box;
@@ -1045,8 +1027,6 @@ nav {
   background: #2c2c2e;
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   border-radius: 1rem;
   display: -ms-grid;
   display: grid;
@@ -1115,8 +1095,6 @@ nav {
   background: #1c1c1e;
   -webkit-backdrop-filter: blur(8rem);
           backdrop-filter: blur(8rem);
-  -webkit-box-shadow: 1px 1px 2px 1px #2c2c2e;
-          box-shadow: 1px 1px 2px 1px #2c2c2e;
   border-radius: 1rem;
   z-index: 2;
   display: -webkit-box;
@@ -1193,8 +1171,6 @@ nav {
   background: #2c2c2e;
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   border-radius: 1rem;
   display: -ms-grid;
   display: grid;
@@ -1263,8 +1239,6 @@ nav {
   background: #1c1c1e;
   -webkit-backdrop-filter: blur(8rem);
           backdrop-filter: blur(8rem);
-  -webkit-box-shadow: 1px 1px 2px 1px #2c2c2e;
-          box-shadow: 1px 1px 2px 1px #2c2c2e;
   border-radius: 1rem;
   z-index: 2;
   display: -webkit-box;
@@ -1341,8 +1315,6 @@ nav {
   background: #2c2c2e;
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   border-radius: 1rem;
   display: -ms-grid;
   display: grid;
@@ -1411,8 +1383,6 @@ nav {
   background: #1c1c1e;
   -webkit-backdrop-filter: blur(8rem);
           backdrop-filter: blur(8rem);
-  -webkit-box-shadow: 1px 1px 2px 1px #2c2c2e;
-          box-shadow: 1px 1px 2px 1px #2c2c2e;
   border-radius: 1rem;
   z-index: 2;
   display: -webkit-box;
@@ -1489,8 +1459,6 @@ nav {
   background: #2c2c2e;
   -webkit-backdrop-filter: blur(10rem);
           backdrop-filter: blur(10rem);
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   border-radius: 1rem;
   display: -ms-grid;
   display: grid;

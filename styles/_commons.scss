@@ -35,7 +35,7 @@ nav {
   justify-content: space-around;
   padding: 1rem;
   backdrop-filter: blur(1rem);
-  box-shadow: 2.7px 5.4px 5.4px hsl(0deg 0% 0% / 0.42);
+box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
   border-bottom: 1px solid #040405c7;
 }
 .logo-container {
@@ -81,7 +81,7 @@ nav {
     .dm {
       margin-left: 2rem;
       height: 6vh;
-      background-color: #2c2c2e; border-radius: 20%;
+    
       
       &:hover {
         background: linear-gradient(to right top, #3fb779e8, #3fb7798f);

@@ -15,6 +15,7 @@
   justify-content: flex-start;
   align-items: center;
   background: #2c2c2e;
+  
 }
 @mixin feedback-bottom {
   flex: 0 1 40vh;
@@ -94,38 +95,42 @@
 }
 
 #blue {
-  color: #3fb779; /*correct blue #357bf2 is this */
+  background: linear-gradient(to right top, #fafafa60, #3fb779);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
 .buttons-hero {
   display: flex;
-
   .reviewsbtn {
     img {
       height: 7vh;
     }
   }
   .coursesbtn {
+    display: grid;
+    place-content: center;
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     margin-left: 1.5vw;
     font-weight: 500;
     color: white;
-    background: #1c1c1e;
     text-decoration: none;
     text-align: center;
-    padding: 1.2rem 5rem 1.2rem 2rem;
-    border-radius: 0.5rem;
-    border: none;
-    position: relative;
-    &:hover {
-      padding: 1.1rem 4.9rem 1.1rem 1.9rem;
-      color: #767680;
-    }
+    padding: 1.5vh 2vh;
+    border-bottom: 1px solid #545458;
+
+    display: inline;
     img {
-      position: absolute;
-      top: 0.1rem;
-      height: 7vh;
+      height: 3rem;
+    }
+    &:hover {
+      background-color: white;
+      border-radius: 1rem;
+      color: #040405;
+      border: none;
     }
   }
 }
@@ -141,7 +146,6 @@
     margin-right: 4vw;
     background-color: #ffffff;
     border-radius: 50%;
-   
   }
 }
 
@@ -297,33 +301,33 @@
     height: 90vh;
     margin: auto;
     background: #1c1c1e;
-    border: 4px solid #ffffff;
+    border: 1px solid #2c2c2e;
     border-radius: 3rem;
     backdrop-filter: blur(2rem);
     display: flex;
     align-items: center;
-    
+
     &-1 {
       flex: 0 1 20%;
       height: 100%;
       display: flex;
       align-items: center;
       color: #767680;
+   border-top-left-radius: 3rem;
+   border-bottom-left-radius: 3rem;
+   box-shadow: 10px -1px 6px 4px rgba(0,0,0,0.33);
+
     }
     &-2 {
-      border-top-left-radius: 2rem;
-      border-bottom-left-radius: 2rem;
-      background: #2c2c2e;
       backdrop-filter: blur(1rem);
-   
       height: 100%;
       flex: 0 1 60%;
     }
     &-3 {
-   
       padding: 2rem;
       height: 100%;
       flex: 0 1 20%;
+      box-shadow: -16px 4px 11px -1px rgba(0,0,0,0.26);
     }
   }
 }
@@ -342,19 +346,20 @@
   flex: 0 1 10%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 2rem;
+justify-content: left;
   cursor: pointer;
   h3 {
+    text-align: left;
+    margin-left: 1rem;
     font-size: 2.4vh;
     font-weight: 400;
   }
 }
 .tab.active {
-  background: linear-gradient(to left bottom, #2c2c2e91, #2c2c2e94);
+  background: linear-gradient(to left bottom, #2c2c2e, #2c2c2e94);
   border-radius: 1.2rem;
   backdrop-filter: blur(2rem);
- 
-  border-bottom: 1px solid #545458;
   color: white;
 }
 .tab:hover {
@@ -362,7 +367,7 @@
   border-radius: 1.2rem;
   backdrop-filter: blur(2rem);
   color: white;
-  
+
   background-color: rgba(255, 255, 255, 0.459);
 }
 [data-tab-content] {
@@ -409,7 +414,7 @@
       align-items: center;
       justify-content: space-evenly;
       li {
-        background: #1c1c1e;
+       background: #2c2c2e;
         flex: 0 1 30%;
         margin-top: 1.5vh;
         margin-bottom: 1vh;
@@ -460,16 +465,17 @@
   }
 }
 .t.active {
-  background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
-  color: #040405;
-  border-radius: 0.5rem;
-  
+  background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
+  box-shadow: -2px -2px 7px -3px rgba(0,0,0,0.33);
+ border: none;
+ color: #040405;
+
 }
 .t:hover {
-  background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
+  background: linear-gradient(to right top, #fafafa91, #71a5edfb);
   color: #040405;
-  border-radius: 1.5rem;
  
+
 }
 /*this is for the inner tabs put this somewhere else */
 /*the final right side of the panel */
@@ -479,10 +485,10 @@
 .active[data-t-content] {
   display: flex;
   flex-direction: column;
-  
 }
 .description {
-  flex: 0 1 65vh;  color: #ffffff;
+  flex: 0 1 65vh;
+  color: #ffffff;
   border-radius: 1.5rem;
   margin-bottom: 1vh;
   &-inner {
@@ -604,6 +610,7 @@
   width: 100%;
   margin: auto;
   background: linear-gradient(to right bottom, #ffffff07, #00000007);
+  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
   #{&}__inner {
     height: 20vh;
     margin: auto;
@@ -699,7 +706,7 @@
         margin-bottom: 8vh;
         background: #1c1c1e;
         backdrop-filter: blur(8rem);
- 
+
         border-radius: 1rem;
         position: relative;
         z-index: 2;
@@ -716,7 +723,7 @@
           height: 18vh;
           background: #2c2c2e;
           backdrop-filter: blur(10rem);
-          
+
           border-radius: 1rem;
           margin: 10vh auto 0vh auto;
           @include fonts-bottom;
@@ -754,7 +761,7 @@
         margin-bottom: 8vh;
         background: #1c1c1e;
         backdrop-filter: blur(8rem);
-   
+
         border-radius: 1rem;
         position: relative;
         z-index: 2;
@@ -771,7 +778,7 @@
           height: 18vh;
           background: #2c2c2e;
           backdrop-filter: blur(10rem);
-          
+
           border-radius: 1rem;
           margin: 10vh auto 0vh auto;
           @include fonts-bottom;
@@ -791,8 +798,6 @@
       margin: auto;
       background: #2c2c2e;
       border-radius: 3rem;
-      
-      
     }
   }
 }

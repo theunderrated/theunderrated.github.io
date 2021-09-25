@@ -9,12 +9,11 @@
 }
 
 @mixin feedback-drop {
-  height: 40vh; 
+  height: 40vh;
   width: 15vw;
   position: absolute;
   background: #1c1c1e;
   backdrop-filter: blur(8rem);
-  box-shadow: 1px 1px 2px 1px #2c2c2e;
   border-radius: 1rem;
   z-index: 2;
   display: flex;
@@ -36,7 +35,7 @@
   background: white;
   background: #2c2c2e;
   backdrop-filter: blur(10rem);
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+
   border-radius: 1rem;
   display: grid;
   place-content: center;
@@ -118,7 +117,6 @@
   }
   ul li ul li:hover {
     background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
     backdrop-filter: blur(10rem);
   }
   h2 {
@@ -129,17 +127,15 @@
       font-size: 1.8vh;
     }
   }
-    h3 {
-      font-size: 2.2vh;
-      font-weight: 200;
-      line-height: 5vh;
-      cursor: pointer;
-      @include media("<=tablet") {
-        font-size: 1.6vh;
-      }
+  h3 {
+    font-size: 2.2vh;
+    font-weight: 200;
+    line-height: 5vh;
+    cursor: pointer;
+    @include media("<=tablet") {
+      font-size: 1.6vh;
+    }
   }
-  
-  
 }
 
 /*starts here */
@@ -154,7 +150,7 @@
   justify-content: center;
   backdrop-filter: blur(1rem);
   background: #1c1c1e;
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
+
   #{&}-header {
     flex: 0 1 30%;
     h2 {
@@ -177,7 +173,7 @@
     justify-content: space-evenly;
     background: #2c2c2e;
     backdrop-filter: blur(1rem);
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
+
     border-bottom: 1px solid;
 
     .links-container-inner {
@@ -186,8 +182,7 @@
       border-radius: 5px;
       background: #1c1c1e;
       backdrop-filter: blur(1rem);
-      
-      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
+
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -607,6 +602,5 @@
   }
   .feedback2 {
     top: 44vh;
-   
   }
 }

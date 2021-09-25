@@ -52,6 +52,8 @@ nav {
   padding: 1rem;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
   border-bottom: 1px solid #040405c7;
 }
 
@@ -116,8 +118,6 @@ nav {
 .button-container .dm-a .dm {
   margin-left: 2rem;
   height: 6vh;
-  background-color: #2c2c2e;
-  border-radius: 20%;
 }
 
 .button-container .dm-a .dm:hover {
@@ -238,8 +238,12 @@ nav {
 }
 
 #blue {
-  color: #3fb779;
-  /*correct blue #357bf2 is this */
+  background: -webkit-gradient(linear, left bottom, right top, from(#fafafa60), to(#3fb779));
+  background: linear-gradient(to right top, #fafafa60, #3fb779);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 600;
 }
 
@@ -254,29 +258,30 @@ nav {
 }
 
 .buttons-hero .coursesbtn {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   margin-left: 1.5vw;
   font-weight: 500;
   color: white;
-  background: #1c1c1e;
   text-decoration: none;
   text-align: center;
-  padding: 1.2rem 5rem 1.2rem 2rem;
-  border-radius: 0.5rem;
-  border: none;
-  position: relative;
-}
-
-.buttons-hero .coursesbtn:hover {
-  padding: 1.1rem 4.9rem 1.1rem 1.9rem;
-  color: #767680;
+  padding: 1.5vh 2vh;
+  border-bottom: 1px solid #545458;
+  display: inline;
 }
 
 .buttons-hero .coursesbtn img {
-  position: absolute;
-  top: 0.1rem;
-  height: 7vh;
+  height: 3rem;
+}
+
+.buttons-hero .coursesbtn:hover {
+  background-color: white;
+  border-radius: 1rem;
+  color: #040405;
+  border: none;
 }
 
 .land-right {
@@ -706,7 +711,7 @@ nav {
   height: 90vh;
   margin: auto;
   background: #1c1c1e;
-  border: 4px solid #ffffff;
+  border: 1px solid #2c2c2e;
   border-radius: 3rem;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
@@ -730,12 +735,13 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   color: #767680;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  -webkit-box-shadow: 10px -1px 6px 4px rgba(0, 0, 0, 0.33);
+          box-shadow: 10px -1px 6px 4px rgba(0, 0, 0, 0.33);
 }
 
 .third-container-2 {
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  background: #2c2c2e;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
   height: 100%;
@@ -750,6 +756,8 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
+  -webkit-box-shadow: -16px 4px 11px -1px rgba(0, 0, 0, 0.26);
+          box-shadow: -16px 4px 11px -1px rgba(0, 0, 0, 0.26);
 }
 
 .tabs {
@@ -782,24 +790,26 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-left: 2rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   cursor: pointer;
 }
 
 .tab h3 {
+  text-align: left;
+  margin-left: 1rem;
   font-size: 2.4vh;
   font-weight: 400;
 }
 
 .tab.active {
-  background: -webkit-gradient(linear, right top, left bottom, from(#2c2c2e91), to(#2c2c2e94));
-  background: linear-gradient(to left bottom, #2c2c2e91, #2c2c2e94);
+  background: -webkit-gradient(linear, right top, left bottom, from(#2c2c2e), to(#2c2c2e94));
+  background: linear-gradient(to left bottom, #2c2c2e, #2c2c2e94);
   border-radius: 1.2rem;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
-  border-bottom: 1px solid #545458;
   color: white;
 }
 
@@ -886,7 +896,7 @@ nav {
 }
 
 .inner-bottom ul li {
-  background: #1c1c1e;
+  background: #2c2c2e;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 30%;
           flex: 0 1 30%;
@@ -950,17 +960,18 @@ nav {
 }
 
 .t.active {
-  background: -webkit-gradient(linear, right top, left bottom, from(#fafafa91), to(#ffd52efb));
-  background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
+  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#71a5edfb));
+  background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
+  -webkit-box-shadow: -2px -2px 7px -3px rgba(0, 0, 0, 0.33);
+          box-shadow: -2px -2px 7px -3px rgba(0, 0, 0, 0.33);
+  border: none;
   color: #040405;
-  border-radius: 0.5rem;
 }
 
 .t:hover {
-  background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#3fb779fb));
-  background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
+  background: -webkit-gradient(linear, left bottom, right top, from(#fafafa91), to(#71a5edfb));
+  background: linear-gradient(to right top, #fafafa91, #71a5edfb);
   color: #040405;
-  border-radius: 1.5rem;
 }
 
 /*this is for the inner tabs put this somewhere else */
@@ -1146,6 +1157,8 @@ nav {
   margin: auto;
   background: -webkit-gradient(linear, left top, right bottom, from(#ffffff07), to(#00000007));
   background: linear-gradient(to right bottom, #ffffff07, #00000007);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
 }
 
 .footer .footer__inner {
