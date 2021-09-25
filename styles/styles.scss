@@ -62,7 +62,7 @@
 .glass {
   height: 370vh;
   @include media("<=tablet") {
-    height: 370vh;
+    height: 570vh;
   }
 }
 /*hero section */
@@ -868,7 +868,7 @@
     margin-top: 4vh;
   }
   .third {
-    height: 90vh;
+    height: 290vh;
     width: 95%;
     margin: 2vh auto 2vh auto;
     display: block;
@@ -878,18 +878,18 @@
       height: 90vh;
       border-radius: 1rem;
       &-1 {
-       display: block;
-       border: none;
-        height: 60vh;
+        display: block;
+        padding-top: 5vh;
+        border: none;
+        height: 40vh;
         border-radius: 0;
         color: #767680;
         box-shadow: none;
-      
-      
       }
       &-2 {
         backdrop-filter: blur(1rem);
-        height: 50vh;
+        background-color: #2c2c2e;
+        height: 92vh;
       }
       &-3 {
         height: 40vh;
@@ -904,7 +904,7 @@
     padding: 1rem 0rem;
     justify-content: center;
     cursor: pointer;
-    
+
     h3 {
       text-align: center;
       margin-left: 1rem;
@@ -923,7 +923,7 @@
     border-radius: 1.2rem;
     backdrop-filter: blur(2rem);
     color: white;
-  
+
     background-color: rgba(255, 255, 255, 0.459);
   }
   [data-tab-content] {
@@ -933,7 +933,227 @@
     display: flex;
     flex-direction: column;
   }
+  .inner {
+    align-items: center;
+    &-top {
+      width: 100%;
+      padding: 1.5rem 2rem;
+      flex: 0 1 10vh;
+      border-bottom: 1px solid;
+      /*text in the tab middile part the h1 the h3 */
+      h1 {
+        font-size: 3vh;
+        font-weight: 600;
+        padding-bottom: 1vh;
+      }
+      h3 {
+        font-size: 2vh;
+        font-weight: 400;
+        padding-bottom: 1vh;
+      }
+    }
+    &-bottom {
+      flex: 0 1 40vh;
+      padding: 0rem 2rem;
+      margin-top: 1.5vh;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        li {
+          background: #1c1c1e;
+          width: 100%;
+          flex: none;
+          margin-top: 1.5vh;
+          margin-bottom: 1vh;
+          height: 25vh;
+          padding: 1.2rem 1rem;
+          border-radius: 1rem;
+          list-style: none;
+          cursor: pointer;
 
+          h5 {
+            width: 90%;
+            font-size: 1.8vh;
+            font-weight: 400;
+            border-bottom: 1.5px solid #545458;
+          }
+        }
+      }
+    }
+  }
+  /*the boxes inside the panel */
+  .to {
+    display: none;
+  }
+  .t-inside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &-top {
+      flex: 0 1 90%;
+
+      h2 {
+        font-size: 2.8vh;
+        font-weight: 600;
+        border-bottom: 1px solid #545458;
+      }
+      h4 {
+        margin-top: 1vh;
+        font-size: 2.2vh;
+        font-weight: 500;
+      }
+    }
+    &-bottom {
+      flex: 0 1 10%;
+
+      h5 {
+        width: 90%;
+        font-size: 1.8vh;
+        font-weight: 400;
+        border-bottom: 1.5px solid #545458;
+      }
+    }
+  }
+  .t.active {
+    background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
+    box-shadow: -2px -2px 7px -3px rgba(0, 0, 0, 0.33);
+    border: none;
+    color: #040405;
+  }
+  .t:hover {
+    background: linear-gradient(to right top, #fafafa91, #71a5edfb);
+    color: #040405;
+  }
+  /*this is for the inner tabs put this somewhere else */
+  /*the final right side of the panel */
+  [data-t-content] {
+    display: none;
+  }
+  .active[data-t-content] {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1e;
+  }
+
+  .right-panel {
+    &-inner {
+      background: none;
+      border-top-right-radius: none;
+      padding: 1rem;
+      h2 {
+        text-align: left;
+        font-size: 2.5vh;
+        font-weight: 600;
+        padding-bottom: 1vh;
+        border-bottom: 1px solid #545458;
+        margin-bottom: 1vh;
+      }
+      h3 {
+        font-size: 2.4vh;
+        font-weight: 500;
+      }
+    }
+  }
+  .right-panel-1 {
+    flex: 0 1 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    &-box1 {
+      flex: 0 1 20vw;
+      margin-right: 0.5vw;
+      height: 12vh;
+      background: #2c2c2e;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      &-top {
+        flex: 0 1 8vh;
+        display: grid;
+        place-content: center;
+        img {
+          height: 3rem;
+        }
+      }
+      &-bottom {
+        flex: 0 1 4vh;
+        border-radius: 1rem;
+        h4 {
+          text-align: center;
+          font-size: 2vh;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .right-button-1 {
+    flex: 0 1 5vh;
+    background-color: rgb(151, 19, 19);
+    width: 90%;
+    margin: 2vh auto 0vh;
+    a {
+      display: grid;
+      place-content: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-decoration: none;
+      text-align: center;
+      padding: 1.5vh 2vh;
+    }
+  }
+  .right-button-2 {
+    flex: 0 1 5vh;
+    background-color: rgb(151, 19, 19);
+    width: 90%;
+    margin: 1vh auto 5vh;
+    a {
+      display: grid;
+      place-content: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-decoration: none;
+      text-align: center;
+      padding: 1.5vh 2vh;
+    }
+  }
+  .description {
+    background: #2c2c2e;
+    flex: 0 1 65vh;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    margin-bottom: 1vh;
+    &-inner {
+      padding: 1.5rem;
+      h2 {
+        margin-bottom: 2vh;
+        text-align: center;
+        font-size: 2.5vh;
+        font-weight: 600;
+        padding-bottom: 1vh;
+        border-bottom: 1px solid #545458;
+      }
+      h3 {
+        font-size: 2.4vh;
+        font-weight: 500;
+      }
+      h4 {
+        margin-top: 1vh;
+        font-size: 2vh;
+        font-weight: 600;
+      }
+    }
+  }
+  .date {
+    flex: 0 1 18vh;
+    background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
+    border-radius: 0.5rem;
+  }
 }
 
 /*iphone 5s responsive */
