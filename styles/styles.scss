@@ -21,7 +21,6 @@
   width: 90%;
   background: linear-gradient(to left bottom, #1c1c1e91, #1c1c1e94);
   backdrop-filter: blur(2rem);
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
   border-radius: 1rem;
   display: grid;
   place-content: center;
@@ -142,8 +141,7 @@
     margin-right: 4vw;
     background-color: #ffffff;
     border-radius: 50%;
-    -webkit-box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.664);
-    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.424);
+   
   }
 }
 
@@ -304,7 +302,7 @@
     backdrop-filter: blur(2rem);
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+    
     &-1 {
       flex: 0 1 20%;
       height: 100%;
@@ -317,7 +315,7 @@
       border-bottom-left-radius: 2rem;
       background: #2c2c2e;
       backdrop-filter: blur(1rem);
-      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.418);
+   
       height: 100%;
       flex: 0 1 60%;
     }
@@ -355,7 +353,7 @@
   background: linear-gradient(to left bottom, #2c2c2e91, #2c2c2e94);
   border-radius: 1.2rem;
   backdrop-filter: blur(2rem);
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+ 
   border-bottom: 1px solid #545458;
   color: white;
 }
@@ -364,7 +362,7 @@
   border-radius: 1.2rem;
   backdrop-filter: blur(2rem);
   color: white;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  
   background-color: rgba(255, 255, 255, 0.459);
 }
 [data-tab-content] {
@@ -391,7 +389,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: "Poppins", sans-serif;
-      font-size: 4.2vh;
+      font-size: 4vh;
       font-weight: 600;
       padding-bottom: 1vh;
     }
@@ -405,16 +403,16 @@
     flex: 0 1 80vh;
     width: 100%;
     padding: 0rem 2rem;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
     ul {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       li {
         background: #1c1c1e;
-        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.397);
         flex: 0 1 30%;
         margin-top: 1.5vh;
+        margin-bottom: 1vh;
         height: 30vh;
         padding: 1.2rem 1rem;
         border-radius: 1rem;
@@ -465,7 +463,7 @@
   background: linear-gradient(to left bottom, #fafafa91, #ffd52efb);
   color: #040405;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+  
 }
 .t:hover {
   background: linear-gradient(to right bottom, #fafafa91, #3fb779fb);
@@ -605,8 +603,6 @@
 .footer {
   width: 100%;
   margin: auto;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.116);
-  box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.164);
   background: linear-gradient(to right bottom, #ffffff07, #00000007);
   #{&}__inner {
     height: 20vh;
@@ -703,7 +699,7 @@
         margin-bottom: 8vh;
         background: #1c1c1e;
         backdrop-filter: blur(8rem);
-        box-shadow: 1px 1px 2px 1px #2c2c2e;
+ 
         border-radius: 1rem;
         position: relative;
         z-index: 2;
@@ -720,7 +716,7 @@
           height: 18vh;
           background: #2c2c2e;
           backdrop-filter: blur(10rem);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+          
           border-radius: 1rem;
           margin: 10vh auto 0vh auto;
           @include fonts-bottom;
@@ -731,7 +727,6 @@
         margin-bottom: 8vh;
         background: #1c1c1e;
         backdrop-filter: blur(8rem);
-        box-shadow: 1px 1px 2px 1px #2c2c2e;
         border-radius: 1rem;
         position: relative;
         z-index: 2;
@@ -749,7 +744,6 @@
 
           background: #2c2c2e;
           backdrop-filter: blur(10rem);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
           border-radius: 1rem;
           margin: 10vh auto 0vh auto;
           @include fonts-bottom;
@@ -760,7 +754,7 @@
         margin-bottom: 8vh;
         background: #1c1c1e;
         backdrop-filter: blur(8rem);
-        box-shadow: 1px 1px 2px 1px #2c2c2e;
+   
         border-radius: 1rem;
         position: relative;
         z-index: 2;
@@ -777,7 +771,7 @@
           height: 18vh;
           background: #2c2c2e;
           backdrop-filter: blur(10rem);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+          
           border-radius: 1rem;
           margin: 10vh auto 0vh auto;
           @include fonts-bottom;
@@ -797,9 +791,8 @@
       margin: auto;
       background: #2c2c2e;
       border-radius: 3rem;
-      backdrop-filter: blur(2rem);
-      -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
-      box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.212);
+      
+      
     }
   }
 }

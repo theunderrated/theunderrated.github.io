@@ -35,7 +35,7 @@ nav {
   justify-content: space-around;
   padding: 1rem;
   backdrop-filter: blur(1rem);
-  box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.171);
+  box-shadow: 2.7px 5.4px 5.4px hsl(0deg 0% 0% / 0.42);
   border-bottom: 1px solid #040405c7;
 }
 .logo-container {
@@ -56,8 +56,6 @@ nav {
     text-decoration: none;
     padding: 1.5rem 5rem 1.5rem 2rem;
     background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
-    backdrop-filter: blur(10rem);
-    box-shadow: 1px 1px 8px 1px rgba(2, 0, 0, 0.596);
     border-radius: 1.2rem;
     position: relative;
     &:hover {
@@ -88,7 +86,7 @@ nav {
       &:hover {
         background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
     backdrop-filter: blur(10rem);
-    box-shadow: 1px 1px 8px 1px rgba(2, 0, 0, 0.596);
+    
         border-radius: 50%;
       }
     }
