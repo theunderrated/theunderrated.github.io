@@ -1266,6 +1266,34 @@ nav {
   display: none;
 }
 
+/*cards section*/
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 35rem;
+  width: 40rem;
+  min-width: 25rem;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  background: #2c2c2e;
+  -webkit-box-shadow: -0.5rem 0 1rem #1c1c1e;
+          box-shadow: -0.5rem 0 1rem #1c1c1e;
+}
+
 /*footer*/
 .footer {
   width: 100%;
@@ -1605,7 +1633,7 @@ nav {
     margin-top: 4vh;
   }
   .third {
-    height: 290vh;
+    height: 220vh;
     width: 95%;
     margin: 2vh auto 2vh auto;
     display: block;

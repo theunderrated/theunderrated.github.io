@@ -64,7 +64,7 @@
   @include media("<=tablet") {
     height: 570vh;
   }
-  }
+}
 
 /*hero section */
 .land {
@@ -679,6 +679,24 @@
 .second-mobile {
   display: none;
 }
+/*cards section*/
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 35rem;
+  width: 40rem;
+  min-width: 25rem;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  background: #2c2c2e;
+  box-shadow: -0.5rem 0 1rem #1c1c1e;
+}
 /*footer*/
 .footer {
   width: 100%;
@@ -869,7 +887,7 @@
     margin-top: 4vh;
   }
   .third {
-    height: 290vh;
+    height: 220vh;
     width: 95%;
     margin: 2vh auto 2vh auto;
     display: block;
@@ -888,13 +906,12 @@
         box-shadow: none;
         @include media("<=phone") {
           height: 60vh;
-          }
+        }
       }
       &-2 {
         backdrop-filter: blur(1rem);
         background-color: #2c2c2e;
         height: 92vh;
-     
       }
       &-3 {
         height: 40vh;
