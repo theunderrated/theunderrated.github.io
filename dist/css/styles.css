@@ -1297,7 +1297,7 @@ nav {
 /*footer*/
 .footer {
   width: 100%;
-  margin: auto;
+  margin: 10vh auto 0;
   background: -webkit-gradient(linear, left top, right bottom, from(#ffffff07), to(#00000007));
   background: linear-gradient(to right bottom, #ffffff07, #00000007);
   -webkit-box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 0.75);
