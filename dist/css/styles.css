@@ -309,7 +309,7 @@ nav {
 /*second section */
 .second-head {
   font-size: 5.4vh;
-  margin-bottom: 5vh;
+  margin-bottom: 6vh;
   line-height: 4vh;
   font-weight: 400;
   text-align: center;
@@ -326,7 +326,7 @@ nav {
 }
 
 .second {
-  height: 80vh;
+  height: 70vh;
   width: 95%;
   margin: 0vh auto 0vh auto;
   display: -webkit-box;
@@ -350,6 +350,37 @@ nav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.second-btn {
+  margin-top: 8vh;
+  margin-bottom: 15vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.second-btn a {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
+  background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
+  border-radius: 1.2rem;
+}
+
+.second-btn a:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.945)), to(rgba(255, 255, 255, 0.822)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.945), rgba(255, 255, 255, 0.822));
+  color: #040405;
+}
+
+@media (max-width: 768px) {
+  .second-btn {
+    display: none;
+  }
 }
 
 .feedback1 {
@@ -1159,7 +1190,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-1 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1173,7 +1204,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-2 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1187,7 +1218,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-3 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1202,7 +1233,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-4 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1216,7 +1247,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-5 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1230,7 +1261,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-6 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1244,7 +1275,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-7 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1258,7 +1289,7 @@ nav {
 
 @media (max-width: 768px) {
   .icon-8 {
-    height: 3vh;
+    height: 5vh;
   }
 }
 
@@ -1266,7 +1297,7 @@ nav {
   display: none;
 }
 
-/*cards section*/
+/*cards section feeeeeeeeedback*/
 .card-list {
   display: -webkit-box;
   display: -ms-flexbox;
