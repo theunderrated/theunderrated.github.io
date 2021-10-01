@@ -1353,7 +1353,7 @@ nav {
   font-weight: 400;
 }
 
-/*Responsive for mobile */
+/*Responsive for mobile --------------------- */
 @media (max-width: 768px) {
   .land {
     display: block;
@@ -1400,7 +1400,7 @@ nav {
     display: none;
   }
   .second-mobile {
-    height: 120vh;
+    height: 130vh;
     display: block;
     width: 90%;
     margin: auto;
@@ -1559,7 +1559,7 @@ nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30vh;
             flex: 0 0 30vh;
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
     background: #1c1c1e;
     -webkit-backdrop-filter: blur(8rem);
             backdrop-filter: blur(8rem);
@@ -1624,6 +1624,21 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .second-mobile-inner-btn {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .second-mobile-inner-btn a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    background: -webkit-gradient(linear, left bottom, right top, from(#3fb779e8), to(#3fb7798f));
+    background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
+    border-radius: 1.2rem;
+  }
   .third-head {
     padding: 0vh 3vw 1vh;
     font-size: 2.6vh;
