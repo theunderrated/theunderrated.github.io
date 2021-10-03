@@ -1149,7 +1149,7 @@ nav {
   display: grid;
   place-content: center;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.4vh;
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -1170,7 +1170,7 @@ nav {
   display: grid;
   place-content: center;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.4vh;
   font-weight: 400;
   text-decoration: none;
   text-align: center;
@@ -1347,7 +1347,7 @@ nav {
 
 @media (max-width: 360px) {
   .card-container {
-    margin-top: 24vh;
+    margin-top: 20vh;
   }
 }
 
@@ -1365,19 +1365,38 @@ nav {
           flex: 0 1 24vw;
 }
 
+@media (max-width: 768px) {
+  .card-left-in {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40vw;
+            flex: 0 1 40vw;
+  }
+}
+
 .card-left-in-box {
-  height: 80%;
-  width: 80%;
+  height: 60%;
+  width: 70%;
   margin: 3.5vh auto;
   background: -webkit-gradient(linear, left bottom, right top, from(rgba(250, 250, 250, 0.815)), to(#71a5ed));
   background: linear-gradient(to right top, rgba(250, 250, 250, 0.815), #71a5ed);
   border-radius: 2rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  .card-left-in-box {
+    height: 60%;
+    width: 90%;
+  }
 }
 
 .card-left-in-box h1 {
-  padding: 2vh 2vw;
-  font-size: 4.5vh;
-  font-weight: 600;
+  width: 80%;
+  margin: auto;
+  font-size: 3.8vh;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(#1c1c1e), to(#040405));
   background: linear-gradient(to right bottom, #1c1c1e, #040405);
@@ -1389,6 +1408,7 @@ nav {
 
 @media (max-width: 768px) {
   .card-left-in-box h1 {
+    width: 90%;
     font-size: 2.4vh;
   }
 }
@@ -1399,18 +1419,35 @@ nav {
           flex: 0 1 24vw;
 }
 
+@media (max-width: 768px) {
+  .card-left-in-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40vw;
+            flex: 0 1 40vw;
+  }
+}
+
 .card-left-in-2-box {
-  height: 80%;
+  height: 50%;
   width: 80%;
   margin: 3.5vh auto;
   background: -webkit-gradient(linear, right top, left bottom, from(rgba(250, 250, 250, 0.815)), to(#71a5ed));
   background: linear-gradient(to left bottom, rgba(250, 250, 250, 0.815), #71a5ed);
   border-radius: 2rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+  .card-left-in-2-box {
+    height: 60%;
+    width: 90%;
+  }
 }
 
 .card-left-in-2-box h1 {
-  padding: 2vh 2vw;
-  font-size: 4.5vh;
+  font-size: 3.8vh;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   background: -webkit-gradient(linear, left top, right bottom, from(#1c1c1e), to(#040405));
@@ -1423,6 +1460,7 @@ nav {
 
 @media (max-width: 768px) {
   .card-left-in-2-box h1 {
+    width: 90%;
     font-size: 2.4vh;
   }
 }
@@ -1465,11 +1503,17 @@ nav {
           flex-direction: column;
   min-width: 40rem;
   background-color: #040405;
-  -webkit-box-shadow: -1rem 0 3rem #000;
-          box-shadow: -1rem 0 3rem #000;
+  -webkit-box-shadow: -1rem 0 1rem #000;
+          box-shadow: -1rem 0 1rem #000;
   border-radius: 2rem;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 25rem;
+  }
 }
 
 .card:hover {
@@ -1515,6 +1559,13 @@ nav {
           transform: translateY(-0.8rem);
 }
 
+@media (max-width: 768px) {
+  .card-1:hover {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .card-1 .card-1-top {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 12vh;
@@ -1524,9 +1575,9 @@ nav {
 
 .card-1 .card-1-top img {
   position: absolute;
-  top: -19vh;
+  top: -15vh;
   left: -2%;
-  height: 38vh;
+  height: 28vh;
   z-index: 5;
   -webkit-transition: 3s ease;
   transition: 3s ease;
@@ -2047,7 +2098,7 @@ nav {
     -webkit-backdrop-filter: blur(1rem);
             backdrop-filter: blur(1rem);
     background-color: #2c2c2e;
-    height: 92vh;
+    height: 78vh;
   }
   .third-container-3 {
     height: 40vh;
@@ -2148,17 +2199,23 @@ nav {
   }
   .inner-bottom ul li {
     background: #1c1c1e;
-    width: 100%;
+    width: 78vw;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
     margin-top: 1.5vh;
     margin-bottom: 1vh;
-    height: 25vh;
+    height: 12vh;
     padding: 1.2rem 1rem;
     border-radius: 1rem;
     list-style: none;
     cursor: pointer;
+  }
+  .inner-bottom ul li h2 {
+    border: none;
+  }
+  .inner-bottom ul li h4 {
+    display: none;
   }
   .inner-bottom ul li h5 {
     width: 90%;
