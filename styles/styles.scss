@@ -733,10 +733,10 @@
 .card-left-in {
   flex: 0 1 24vw;
   @include media("<=tablet") {
-    flex: 0 1 40vw;
+    flex: 0 1 50vw;
   }
   &-box {
-    height: 60%;
+    height: 70%;
     width: 70%;
     margin: 3.5vh auto;
     background: linear-gradient(
@@ -748,7 +748,7 @@
     display: grid;
     place-content: center;
     @include media("<=tablet") {
-      height: 60%;
+      height: 40%;
       width: 90%;
     }
     h1 {
@@ -764,7 +764,8 @@
       -webkit-text-fill-color: transparent;
       @include media("<=tablet") {
         width: 90%;
-        font-size: 2.4vh;
+        font-size: 2vh;
+        font-weight: 500;
       }
     }
   }
@@ -772,38 +773,9 @@
 .card-left-in-2 {
   flex: 0 1 24vw;
   @include media("<=tablet") {
-    flex: 0 1 40vw;
+    flex: 0 1 50vw;
   }
-  &-box {
-    height: 50%;
-    width: 80%;
-    margin: 3.5vh auto;
-    background: linear-gradient(
-      to left bottom,
-      rgba(250, 250, 250, 0.815),
-      #71a5ed
-    );
-    border-radius: 2rem;display: grid;
-    place-content: center;
-    @include media("<=tablet") {
-      height: 60%;
-      width: 90%;
-    }
-    h1 {
-      font-size: 3.8vh;
-      font-weight: 600;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(to right bottom, #1c1c1e, #040405);
-      text-shadow: none;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      @include media("<=tablet") {
-        width: 90%;
-        font-size: 2.4vh;
-      }
-    }
-  }
+ 
 }
 .card-list {
   flex: 0 1 74vw;
@@ -835,16 +807,25 @@
   border-radius: 2rem;
   transition: 0.2s;
   @include media("<=tablet") {
-    min-width: 25rem;
+    min-width: 20rem;
   }
   &:hover {
     transform: translateY(-1rem);
+    @include media("<=tablet") {
+      display: none;
+    }
   }
   &:hover ~ .card {
     transform: translateX(13rem);
+    @include media("<=tablet") {
+      display: none;
+    }
   }
   &:not(:first-child) {
     margin-left: -13rem;
+    @include media("<=tablet") {
+     margin-left: 0;
+    }
   }
 }
 .card-1 {
@@ -861,7 +842,7 @@
   &:hover {
     transform: translateY(-0.8rem);
     @include media("<=tablet") {
-      transform: translateY(0);
+     display: none;
     }
   }
   #{&}-top {
@@ -876,10 +857,16 @@
       z-index: 5;
       transition: 3s ease;
       transition-property: transform;
+      @include media("<=tablet") {
+        display: none;
+       }
     }
     &:hover {
       transform: scale(1.1);
       z-index: 5;
+      @include media("<=tablet") {
+        display: none;
+       }
     }
   }
   #{&}-bottom {
@@ -1198,7 +1185,7 @@
           border-radius: 1rem;
           list-style: none;
           cursor: pointer;
-          h2{
+          h2 {
             border: none;
           }
           h4 {
