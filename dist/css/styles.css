@@ -1567,12 +1567,6 @@ nav {
   transition-property: transform, -webkit-transform;
 }
 
-@media (max-width: 768px) {
-  .card-1 .card-1-top img {
-    display: none;
-  }
-}
-
 .card-1 .card-1-top:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

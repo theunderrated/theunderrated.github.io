@@ -858,7 +858,7 @@
       transition: 3s ease;
       transition-property: transform;
       @include media("<=tablet") {
-        display: none;
+       
        }
     }
     &:hover {
