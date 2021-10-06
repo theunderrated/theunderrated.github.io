@@ -1345,6 +1345,12 @@ nav {
   height: 140vh;
 }
 
+@media (max-width: 768px) {
+  .card-container {
+    margin-top: 0vh;
+  }
+}
+
 @media (max-width: 360px) {
   .card-container {
     margin-top: 20vh;
@@ -1565,6 +1571,15 @@ nav {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+}
+
+@media (max-width: 768px) {
+  .card-1 .card-1-top img {
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transition-property: none;
+    transition-property: none;
+  }
 }
 
 .card-1 .card-1-top:hover {
@@ -2316,7 +2331,7 @@ nav {
     margin-right: 0.5vw;
     height: 12vh;
     background: #2c2c2e;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2340,7 +2355,7 @@ nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 4vh;
             flex: 0 1 4vh;
-    border-radius: 1rem;
+    border-radius: 0rem;
   }
   .right-panel-1-box1-bottom h4 {
     text-align: center;
