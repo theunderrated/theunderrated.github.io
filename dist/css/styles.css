@@ -194,12 +194,12 @@ nav {
 }
 
 .glass {
-  height: 550vh;
+  height: 670vh;
 }
 
 @media (max-width: 768px) {
   .glass {
-    height: 670vh;
+    height: 770vh;
   }
 }
 
@@ -1492,7 +1492,8 @@ nav {
 
 @media (max-width: 768px) {
   .card:hover {
-    display: none;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
 }
 
@@ -1503,7 +1504,8 @@ nav {
 
 @media (max-width: 768px) {
   .card:hover ~ .card {
-    display: none;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
   }
 }
 
@@ -1548,7 +1550,8 @@ nav {
 
 @media (max-width: 768px) {
   .card-1:hover {
-    display: none;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
 }
 
@@ -1573,15 +1576,6 @@ nav {
   transition-property: transform, -webkit-transform;
 }
 
-@media (max-width: 768px) {
-  .card-1 .card-1-top img {
-    -webkit-transition: none;
-    transition: none;
-    -webkit-transition-property: none;
-    transition-property: none;
-  }
-}
-
 .card-1 .card-1-top:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1590,7 +1584,8 @@ nav {
 
 @media (max-width: 768px) {
   .card-1 .card-1-top:hover {
-    display: none;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1661,6 +1656,21 @@ nav {
 
 .card-1 .card-1-bottom h1 {
   padding: 0vh 1vw 1vh;
+}
+
+/*last section*/
+.last {
+  height: 100vh;
+  width: 90vw;
+  margin: 10vh auto;
+  background-color: red;
+}
+
+.last-in {
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+  background-color: yellow;
 }
 
 /*footer*/
@@ -2065,7 +2075,7 @@ nav {
     margin-top: 4vh;
   }
   .third {
-    height: 220vh;
+    height: 210vh;
     width: 95%;
     margin: 2vh auto 2vh auto;
     display: block;
