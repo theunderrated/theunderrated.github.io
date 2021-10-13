@@ -891,6 +891,35 @@
     width: 90%;
     margin:auto;
     background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-teach{
+      height: 80vh;
+      flex: 0 1 38vw;
+      background-color: black;
+      transition: 0.2s ease-in;
+      &:hover {
+        transform: translateX(1rem);
+        flex: 0 1 40vw;
+        @include media("<=tablet") {
+          transform: translateY(0rem);
+        }
+      }
+    }
+    &-links{
+      height: 80vh;
+      flex: 0 1 38vw;
+      background-color: black;
+      transition: 0.2s ease-in;
+      &:hover {
+        transform: translateX(-1rem);
+        flex: 0 1 40vw;
+        @include media("<=tablet") {
+          transform: translateY(0rem);
+        }
+      }
+    }
   }
 }
 /*footer*/
