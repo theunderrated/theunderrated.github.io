@@ -722,7 +722,6 @@
   height: 140vh;
   @include media("<=tablet") {
     margin-top: 0vh;
-    
   }
   @include media("<=phone") {
     margin-top: 20vh;
@@ -778,7 +777,6 @@
   @include media("<=tablet") {
     flex: 0 1 50vw;
   }
- 
 }
 .card-list {
   flex: 0 1 74vw;
@@ -827,7 +825,7 @@
   &:not(:first-child) {
     margin-left: -13rem;
     @include media("<=tablet") {
-     margin-left: 0;
+      margin-left: 0;
     }
   }
 }
@@ -860,15 +858,13 @@
       z-index: 5;
       transition: 3s ease;
       transition-property: transform;
-     
     }
     &:hover {
       transform: scale(1.1);
       z-index: 5;
       @include media("<=tablet") {
         transform: scale(1);
-     
-       }
+      }
     }
   }
   #{&}-bottom {
@@ -881,42 +877,82 @@
   }
 }
 /*last section*/
-.last{
+.last {
   height: 100vh;
   width: 90vw;
   margin: 10vh auto;
-  background-color: red;
-  &-in{
+
+  &-in {
     height: 90vh;
     width: 90%;
-    margin:auto;
-    background-color: yellow;
+    margin: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &-teach{
+    &-teach {
       height: 80vh;
       flex: 0 1 38vw;
-      background-color: black;
+      border-radius: 2rem;
+      border: 1px solid #2c2c2e;
       transition: 0.2s ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &:hover {
         transform: translateX(1rem);
         flex: 0 1 40vw;
+        background-color: #1c1c1e;
+        cursor: pointer;
         @include media("<=tablet") {
           transform: translateY(0rem);
         }
       }
+      &-inner {
+        height: 70vh;
+        flex: 0 1 30vw;
+        background-color: goldenrod;
+
+        &-top{
+          height: 50vh;
+          background-color: red;
+        }
+        &-bottom{
+          height: 20vh;
+          background-color: blue;
+        }
+      }
     }
-    &-links{
+    &-links {
       height: 80vh;
       flex: 0 1 38vw;
-      background-color: black;
+      border-radius: 2rem;
+      border: 1px solid #2c2c2e;
       transition: 0.2s ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &:hover {
         transform: translateX(-1rem);
         flex: 0 1 40vw;
+        background-color: #1c1c1e;
+        cursor: pointer;
         @include media("<=tablet") {
           transform: translateY(0rem);
+        }
+      }
+      &-inner {
+        height: 70vh;
+        flex: 0 1 30vw;
+        background-color: goldenrod;
+
+        &-top{
+          height: 50vh;
+          background-color: red;
+        }
+        &-bottom{
+          height: 20vh;
+          background-color: blue;
         }
       }
     }

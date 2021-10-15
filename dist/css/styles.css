@@ -16,6 +16,7 @@ html {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -1663,14 +1664,12 @@ nav {
   height: 100vh;
   width: 90vw;
   margin: 10vh auto;
-  background-color: red;
 }
 
 .last-in {
   height: 90vh;
   width: 90%;
   margin: auto;
-  background-color: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1687,9 +1686,19 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 38vw;
           flex: 0 1 38vw;
-  background-color: black;
+  border-radius: 2rem;
+  border: 1px solid #2c2c2e;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .last-in-teach:hover {
@@ -1698,6 +1707,8 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40vw;
           flex: 0 1 40vw;
+  background-color: #1c1c1e;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1707,14 +1718,42 @@ nav {
   }
 }
 
+.last-in-teach-inner {
+  height: 70vh;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30vw;
+          flex: 0 1 30vw;
+  background-color: goldenrod;
+}
+
+.last-in-teach-inner-top {
+  height: 50vh;
+  background-color: red;
+}
+
+.last-in-teach-inner-bottom {
+  height: 20vh;
+  background-color: blue;
+}
+
 .last-in-links {
   height: 80vh;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 38vw;
           flex: 0 1 38vw;
-  background-color: black;
+  border-radius: 2rem;
+  border: 1px solid #2c2c2e;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .last-in-links:hover {
@@ -1723,6 +1762,8 @@ nav {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40vw;
           flex: 0 1 40vw;
+  background-color: #1c1c1e;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1730,6 +1771,24 @@ nav {
     -webkit-transform: translateY(0rem);
             transform: translateY(0rem);
   }
+}
+
+.last-in-links-inner {
+  height: 70vh;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30vw;
+          flex: 0 1 30vw;
+  background-color: goldenrod;
+}
+
+.last-in-links-inner-top {
+  height: 50vh;
+  background-color: red;
+}
+
+.last-in-links-inner-bottom {
+  height: 20vh;
+  background-color: blue;
 }
 
 /*footer*/
