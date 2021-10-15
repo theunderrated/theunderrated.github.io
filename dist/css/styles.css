@@ -1711,13 +1711,6 @@ nav {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .last-in-teach:hover {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
-  }
-}
-
 .last-in-teach-inner {
   height: 70vh;
   -webkit-box-flex: 0;
@@ -1764,13 +1757,6 @@ nav {
           flex: 0 1 40vw;
   background-color: #1c1c1e;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .last-in-links:hover {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
-  }
 }
 
 .last-in-links-inner {
@@ -2564,6 +2550,11 @@ nav {
     background: -webkit-gradient(linear, left top, right bottom, from(#fafafa91), to(#71a5edfb));
     background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
     border-radius: 0.5rem;
+  }
+  /*last section*/
+  .last-in {
+    height: 60vh;
+    display: block;
   }
 }
 

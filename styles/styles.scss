@@ -881,12 +881,10 @@
   height: 100vh;
   width: 90vw;
   margin: 10vh auto;
-
   &-in {
     height: 90vh;
     width: 90%;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -904,20 +902,17 @@
         flex: 0 1 40vw;
         background-color: #1c1c1e;
         cursor: pointer;
-        @include media("<=tablet") {
-          transform: translateY(0rem);
-        }
       }
       &-inner {
         height: 70vh;
         flex: 0 1 30vw;
         background-color: goldenrod;
 
-        &-top{
+        &-top {
           height: 50vh;
           background-color: red;
         }
-        &-bottom{
+        &-bottom {
           height: 20vh;
           background-color: blue;
         }
@@ -937,20 +932,17 @@
         flex: 0 1 40vw;
         background-color: #1c1c1e;
         cursor: pointer;
-        @include media("<=tablet") {
-          transform: translateY(0rem);
-        }
       }
       &-inner {
         height: 70vh;
         flex: 0 1 30vw;
         background-color: goldenrod;
 
-        &-top{
+        &-top {
           height: 50vh;
           background-color: red;
         }
-        &-bottom{
+        &-bottom {
           height: 20vh;
           background-color: blue;
         }
@@ -1451,6 +1443,13 @@
     flex: 0 1 18vh;
     background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
     border-radius: 0.5rem;
+  }
+  /*last section*/
+  .last{
+    &-in{
+      height: 60vh;
+      display: block;
+    }
   }
 }
 
