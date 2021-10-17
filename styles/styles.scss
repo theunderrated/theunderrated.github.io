@@ -70,7 +70,7 @@
   }
 }
 .glass {
-  height: 670vh;
+  height: 645vh;
   @include media("<=tablet") {
     height: 770vh;
   }
@@ -204,10 +204,12 @@
     font-weight: 500;
     color: white;
     text-decoration: none;
-    padding: 1rem 3rem;
+    padding: 1.5rem 4rem;
     background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
     border-radius: 1.2rem;
+    transition: 0.2s ease;
     &:hover {
+      transform: translateY(-1rem);
       background: linear-gradient(
         to right bottom,
         rgba(255, 255, 255, 0.945),
@@ -460,6 +462,9 @@
   }
 }
 /*the boxes inside the panel */
+.to {
+  display: none;
+}
 .t-inside {
   display: flex;
   flex-direction: column;
@@ -489,6 +494,7 @@
     }
   }
 }
+
 .t.active {
   background: linear-gradient(to right bottom, #fafafa91, #71a5edfb);
   box-shadow: -2px -2px 7px -3px rgba(0, 0, 0, 0.33);
@@ -498,6 +504,7 @@
 .t:hover {
   background: linear-gradient(to right top, #fafafa91, #71a5edfb);
   color: #040405;
+
 }
 /*this is for the inner tabs put this somewhere else */
 /*the final right side of the panel */
@@ -886,11 +893,11 @@
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     &-teach {
       height: 80vh;
-      flex: 0 1 38vw;
+      flex: 0 1 28vw;
       border-radius: 2rem;
       border: 1px solid #2c2c2e;
       transition: 0.2s ease-in;
@@ -898,29 +905,67 @@
       justify-content: center;
       align-items: center;
       &:hover {
-        transform: translateX(1rem);
-        flex: 0 1 40vw;
+        transform: translateY(1rem);
         background-color: #1c1c1e;
         cursor: pointer;
       }
       &-inner {
         height: 70vh;
         flex: 0 1 30vw;
-        background-color: goldenrod;
-
         &-top {
           height: 50vh;
-          background-color: red;
+          display: grid;
+          place-content: center;
+          img {
+            height: 40vh;
+
+            object-fit: cover;
+          }
+          h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.6rem;
+            font-weight: 400;
+            text-align: center;
+          }
         }
         &-bottom {
           height: 20vh;
-          background-color: blue;
+          border-radius: 2rem;
+
+          display: grid;
+          h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.6rem;
+            font-weight: 400;
+            text-align: center;
+          }
+          a {
+            width: 90%;
+            margin: auto;
+            font-size: 2.5vh;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
+            border-radius: 1.2rem;
+            position: relative;
+            &:hover {
+              background: linear-gradient(
+                to right bottom,
+                rgba(255, 255, 255, 0.945),
+                rgba(255, 255, 255, 0.822)
+              );
+              color: #040405;
+            }
+          }
         }
       }
     }
     &-links {
       height: 80vh;
-      flex: 0 1 38vw;
+      flex: 0 1 28vw;
       border-radius: 2rem;
       border: 1px solid #2c2c2e;
       transition: 0.2s ease-in;
@@ -928,23 +973,62 @@
       justify-content: center;
       align-items: center;
       &:hover {
-        transform: translateX(-1rem);
-        flex: 0 1 40vw;
+        transform: translateY(1rem);
         background-color: #1c1c1e;
         cursor: pointer;
       }
       &-inner {
         height: 70vh;
         flex: 0 1 30vw;
-        background-color: goldenrod;
 
         &-top {
           height: 50vh;
-          background-color: red;
+          display: grid;
+          place-content: center;
+          h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.6rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 6vh;
+          }
+          img {
+            height: 35vh;
+            object-fit: cover;
+          }
+          
         }
         &-bottom {
           height: 20vh;
-          background-color: blue;
+          border-radius: 2rem;
+          display: grid;
+          h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 2.6rem;
+            font-weight: 400;
+            text-align: center;
+          }
+          a {
+            width: 90%;
+            margin: auto;
+            font-size: 2.5vh;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
+            border-radius: 1.2rem;
+            position: relative;
+            &:hover {
+              background: linear-gradient(
+                to right bottom,
+                rgba(255, 255, 255, 0.945),
+                rgba(255, 255, 255, 0.822)
+              );
+              color: #040405;
+            }
+          }
         }
       }
     }
@@ -1174,7 +1258,7 @@
       &-2 {
         backdrop-filter: blur(1rem);
         background-color: #2c2c2e;
-        height: 78vh;
+        height: 120vh;
       }
       &-3 {
         height: 40vh;
@@ -1246,26 +1330,27 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        
         li {
+          
           background: #1c1c1e;
           width: 78vw;
           flex: none;
           margin-top: 1.5vh;
           margin-bottom: 1vh;
-          height: 12vh;
+          height: 18vh;
           padding: 1.2rem 1rem;
           border-radius: 1rem;
           list-style: none;
           cursor: pointer;
-          h2 {
-            border: none;
-          }
+      
+        
           h4 {
-            display: none;
+            font-size: 1.8vh;
           }
           h5 {
             width: 90%;
-            font-size: 1.8vh;
+            font-size: 1.5vh;
             font-weight: 400;
             border-bottom: 1.5px solid #545458;
           }
@@ -1325,6 +1410,7 @@
     display: flex;
     flex-direction: column;
     background-color: #1c1c1e;
+    
   }
 
   .right-panel {
@@ -1445,8 +1531,8 @@
     border-radius: 0.5rem;
   }
   /*last section*/
-  .last{
-    &-in{
+  .last {
+    &-in {
       height: 60vh;
       display: block;
     }
