@@ -1666,7 +1666,6 @@ nav {
 @media (max-width: 768px) {
   .last {
     height: 130vh;
-    background-color: red;
     margin: auto;
   }
 }
