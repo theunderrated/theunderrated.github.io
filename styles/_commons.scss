@@ -55,10 +55,9 @@ box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
     font-weight: 500;
     color: white;
     text-decoration: none;
-    padding: 1.5rem 5rem 1.5rem 2rem;
+    padding: 1.5rem 2rem ;
     background: linear-gradient(to right top, #3fb779e8, #3fb7798f);
     border-radius: 1.2rem;
-    position: relative;
     &:hover {
       background: linear-gradient(
         to right bottom,
@@ -67,12 +66,7 @@ box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
       );
       color: #040405;
     }
-    img {
-      position: absolute;
-      top: 0.4rem;
-      height: 6vh;
-
-    }
+    
   }
   .dm-a {
     flex: 1 1 10%;
@@ -95,6 +89,10 @@ box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
 }
 
 @include media("<=tablet") {
+  menu {
+    height: 16vh;
+ 
+  }
   nav {
     display: flex;
     flex-direction: column;
@@ -107,14 +105,10 @@ box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
       font-weight: 500;
       color: white;
       text-decoration: none;
-      padding: 1.5rem 4rem 1.2rem 2rem;
+      padding: 1.5rem 2rem;
       
 
-      img {
-        position: absolute;
-        top: 0.2rem;
-        height: 6vh;
-      }
+    
     }
     .dm-a {
      
@@ -126,6 +120,7 @@ box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
 }
 /*iphone 5s responsive */
 @include media("<=phone") {
+ 
   .button-container {
     display: flex;
 
@@ -134,14 +129,8 @@ box-shadow:         1px 1px 4px 0px rgba(50, 50, 50, 0.75);
       font-weight: 500;
       color: white;
       text-decoration: none;
-      padding: 1.4rem 4rem 1.4rem 1.5rem;
+      padding: 1.4rem 1.5rem;
       
-
-      img {
-        position: absolute;
-        top: 0.4rem;
-        height: 6vh;
-      }
     }
     .dm-a {
      
