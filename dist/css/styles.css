@@ -181,18 +181,18 @@ nav {
 }
 
 .glass {
-  height: 610vh;
+  height: 615vh;
 }
 
 @media (max-width: 768px) {
   .glass {
-    height: 790vh;
+    height: 752vh;
   }
 }
 
 @media (max-width: 360px) {
   .glass {
-    height: 835vh;
+    height: 790vh;
   }
 }
 

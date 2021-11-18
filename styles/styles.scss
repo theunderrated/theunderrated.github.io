@@ -70,12 +70,12 @@
   }
 }
 .glass {
-  height: 610vh;
+  height: 615vh;
   @include media("<=tablet") {
-    height: 790vh;
+    height: 752vh;
   }
   @include media("<=phone") {
-    height: 835vh;
+    height:790vh;
   }
 }
 
