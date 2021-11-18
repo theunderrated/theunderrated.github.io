@@ -3,7 +3,7 @@
 .glass {
   height: 190vh;
   @include media("<=tablet") {
-    height: 210vh;
+    height: 220vh;
     overflow: hidden;
   }
 }
@@ -496,7 +496,7 @@
 @include media("<=tablet") {
   .links {
     height: 100vh;
-    margin-top: 40vh;
+    margin-top: 50vh;
     width: 90%;
     #{&}-header {
       flex: 0 1 40%;
@@ -516,7 +516,7 @@
     }
   }
   .feedback1 {
-    top: 22vh;
+    top: 26vh;
     left: 0vh;
     #{&}-top {
       flex: 0 1 20%;
@@ -536,7 +536,7 @@
     }
   }
   .feedback2 {
-    top: 40vh;
+    top: 47vh;
     right: 0;
     flex-direction: row;
     #{&}-top {
@@ -556,7 +556,7 @@
     }
   }
   .feedback3 {
-    top: 165vh;
+    top: 170vh;
     left: 0vh;
     #{&}-top {
       flex: 0 1 20%;
@@ -575,7 +575,7 @@
     }
   }
   .feedback4 {
-    top: 185vh;
+    top: 192vh;
     right: 0vh;
     flex-direction: row;
     #{&}-top {

@@ -186,7 +186,7 @@ nav {
 
 @media (max-width: 768px) {
   .glass {
-    height: 210vh;
+    height: 220vh;
     overflow: hidden;
   }
 }
@@ -1509,7 +1509,7 @@ nav {
 @media (max-width: 768px) {
   .links {
     height: 100vh;
-    margin-top: 40vh;
+    margin-top: 50vh;
     width: 90%;
   }
   .links .links-header {
@@ -1536,7 +1536,7 @@ nav {
             flex: 0 1 95%;
   }
   .feedback1 {
-    top: 22vh;
+    top: 26vh;
     left: 0vh;
   }
   .feedback1 .feedback1-top {
@@ -1558,7 +1558,7 @@ nav {
             transform: none;
   }
   .feedback2 {
-    top: 40vh;
+    top: 47vh;
     right: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1584,7 +1584,7 @@ nav {
             transform: none;
   }
   .feedback3 {
-    top: 165vh;
+    top: 170vh;
     left: 0vh;
   }
   .feedback3 .feedback3-top {
@@ -1606,7 +1606,7 @@ nav {
             transform: none;
   }
   .feedback4 {
-    top: 185vh;
+    top: 192vh;
     right: 0vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
